@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+    </head>
+<body>
+
+    <button onclick="cl()">Click Me Once</button><br><br>
+    <button ondblclick="cl()">Click Me Double</button><br><br>
+    <button oncontextmenu="cl()">Click Me Right</button><br><br>
+    <button onmouseenter="cl()">Mouse Hover</button><br><br>
+    <button onmouseout="cl()">Mouse Out</button><br><br>
+    <button onmousedown="cl()">Mouse Down</button><br><br>
+    <button onmouseup="cl()">Mouse Up</button><br><br>
+    <button onkeyup="cl()">Key Up</button><br><br>
+    <button onkeypress="cl()">Key press</button><br><br>
+    
+    <!-- In body tag following will come  and these are for windows
+
+                    1. onunload="cl()"      
+                    2. onscroll="cl()"       
+                    3. onresize="cl()"     
+                    4. onscroll="cl()"     
+
+    -->
+
+    <script>
+        function cl(){
+            alert("This is an alert");
+        }
+    </script>
+</body>
+</html>

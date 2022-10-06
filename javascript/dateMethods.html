@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+    </head>
+<body style="font-size: larger;">
+
+    <script>
+        var now=new Date();
+        var now1=new Date('January 9 2020');
+            document.write("i==>  " + now1 + "<br>------>");
+        document.write(now + "<br>ii==>  ");
+    //2 toDateString() gives todays date Day/Month/Date/year
+            document.write(now1.toDateString() + "<br>------>");
+        document.write(now.toDateString() + "<br>iii==>  ");
+    //3 getDate() gives just date 
+            document.write(now1.getDate() + "<br>------>");
+        document.write(now.getDate() + "<br>iv==>  ");
+    //4 getFullYear() gives just year
+            document.write(now1.getFullYear() + "<br>------>");
+        document.write(now.getFullYear() + "<br>v==>  ");
+    //5 getMonth() gives just month
+            document.write(now1.getMonth() + "<br>------>");
+        document.write(now.getMonth() + "<br>vi==>  ");
+    //6 getDay() gives week day 
+            document.write(now1.getDay() + "<br>------>")
+        document.write(now.getDay() + "<br>vii==>  ");
+    //7 getHours()
+            document.write(now1.getHours() + "<br>------>")
+        document.write(now.getHours() + "<br>viii==>  ");
+    //8 getMinutes()
+            document.write(now1.getMinutes() + "<br>------>")
+        document.write(now.getMinutes() + "<br>ix==>  ");
+    //9 getSeconds()
+            document.write(now1.getSeconds() + "<br>------>")
+        document.write(now.getSeconds() + "<br>x==>  ");
+    //10 getMiliseconds()
+            document.write(now1.getMilliseconds() + "<br>------>")
+        document.write(now.getMilliseconds() + "<br>xi==>  ");
+    //11 setDate(20)
+        now.setDate(20);
+        document.write(now + "<br>xii==>  ");
+    //12 setMilliseconds(100)
+       now.setMilliseconds(100) ;
+       document.write(now + "<br>xiii==>  ");
+    //13 setMonth()
+        now.setMonth(4);
+       document.write(now + "<br>xiv==>  ");
+    //14 setFullYear()
+        now.setFullYear(2022);
+        document.write(now + "<br>xv==>  ");
+    //15 setHours()
+        now.setHours(14);
+        document.write(now + "<br>xvi==>  ");
+    //16 setMonth()
+        now.setMinutes(50);
+       document.write(now + "<br><br>");
+    //How to use
+        document.write(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+    </script>
+</body>
+</html>

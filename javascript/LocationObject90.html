@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>locationObject</title>
+    </head>
+    <body>
+    <h1>javascript: Location Object</h1>
+    <button id="open" >Open Yahoo Baba</button>
+    <button id="reload">Reload</button>
+    <button id="Assign">Assign</button>
+    <button id="Replace">Replace</button>
+   
+
+<script>
+    console.log(location);
+    console.log(location.host); //host name will be shown
+    console.log(location.href); //it gives URL
+    console.log(location.port); //output 5500
+    console.log(location.protocol); // output http:
+    console.log(location.hash); //http://127.0.0.1:5500/javascript/LocationObject90.html/#value output will be value==> it will be shown when you will enter some value like #myname in header url end 
+    console.log(location.search); //http://127.0.0.1:5500/javascript/LocationObject90.html/?page=1 in console you will be given value with question mark like ?page=1
+    //location.href="https://www.google.com"
+    document.getElementById("open").onclick=google;
+    function google(){
+        location.href="https://www.youtube.com/watch?v=pFHw1Hl08nk&list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf&index=90";
+    }
+    //reload()
+    document.getElementById("reload").onclick=reloadFunction;
+    function reloadFunction(){
+            location.reload();
+    }
+    //assign()
+    document.getElementById("Assign").onclick=assignFunction;
+    function assignFunction(){
+            location.assign("https://www.google.com");
+    }
+    //replace
+    document.getElementById("Replace").onclick=replaceFunction;
+    function replaceFunction(){
+            location.replace("https://www.google.com"); //you cannot go back to your website after applying this means remove history
+    }
+</script>
+    
+</body>
+</html>

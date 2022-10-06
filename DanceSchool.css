@@ -1,0 +1,424 @@
+body{
+    background-color:#1d1d1d;
+    
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+.upper{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+}
+.nos-tudiants {
+    height: 188px;
+    margin: 0 128px 32px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    font-stretch:narrower;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: -7.2px;
+    color: #1d1d1d;
+    text-transform:uppercase;
+  }
+  .section-video> div:nth-child(1){
+    position: relative;
+  }
+  .Aenean-eget-congue {
+    height: 88px;
+    margin: -40px 69px 160px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+    white-space: pre;
+    position: absolute;
+    left: -6%;
+    bottom: -10%;
+    
+  }
+  .section-video{
+      display: flex;
+      flex-wrap: wrap; 
+      background-color: #fff;
+      justify-content: center;
+     
+  }
+  .section-video> div{
+    
+    flex: 1 1 0px;
+    border: #1d1d1d solid 5px;
+  }
+  .section-video>img{
+    
+    flex: 1 1 0px;
+    border: #1d1d1d solid 5px;
+  }
+
+
+  /* Gale Section */
+  .students> div>img {
+    width: 164px;
+    height: 339px;
+    margin: 0 30px 0 0;
+    border-radius: 180px;
+    background-color: #d8d8d8;
+
+  }
+  .-Pellentesque-ut-co {
+    width: 420px;
+    height: 132px;
+    margin: 80px 80px 16px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+  .Claire {
+    width: 57px;
+    height: 30px;
+    margin: 100px 65px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    color: #1d1d1d;
+  }
+  .Jazz-Rock-student {
+    width: 122px;
+    height: 17px;
+    margin: 30px 0 0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+  }
+  .students{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .students> div{
+    min-width: 20%;
+    max-width: 45%;
+    flex: 1 1 0px;
+    justify-content: center;
+  }
+  .capGirl{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Nos Valuers */
+  .Nos-valeurs {
+    height: 190px;
+    margin: 100px 158px 0px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: -2.65px;
+    text-align: center;
+    color: #1d1d1d;
+  }
+  .Perfectionnement {
+   
+    height: 42px;
+    margin: 0 0 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.7;
+    letter-spacing: -1.2px;
+    color: #d8d8d8;
+  }
+  .Aenean-eget-congue-e {
+    
+    height: 66px;
+    margin: 16px 5px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+.Servise{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.servises3{
+  display: flex;
+  flex-wrap: wrap;
+}
+.servises3>div{
+  min-width: 205px;
+  max-width: 500px;
+}
+.plasir{
+  position: relative;
+  color: #1d1d1d;
+}
+.StickersValeurPlaisir {
+  object-fit: contain;
+  transform: rotate(20deg);
+  position: absolute;
+  top:-100%;
+  left: 70%;
+}
+/* section haandman */
+
+.handMan{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 150px;
+  justify-content: center;
+  
+}
+.handMan>div{
+  flex: 1 1 0px;
+}
+.handManImage{
+  min-width: 600px;
+  max-width: 1000px;
+  margin-left: -15%;
+  
+}
+.Bruce{
+  position: relative;
+}
+.handManImage>img:nth-child(2){
+  position: absolute;
+  top: -23%;
+  left: -16%;
+  height: 591px;
+  width: 510px;
+  border-radius: 50%;
+}
+.-Pellentesque-ut-c {
+  width: 400px;
+  height: 136px;
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  white-space: pre;
+}
+.Bruce-Ykanji {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch:extra-condensed;
+  font-style: normal;
+  line-height: 0;
+  letter-spacing: 0px;
+  color: #1d1d1d;
+  margin-left: 12%;
+  padding-left: 5%;
+}
+.Danseur{
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  color: #545454;
+  white-space: pre;
+  position: absolute;
+  left: 10.2%;
+}
+  /* Section footer */
+  .footer{
+    background-color:#1d1d1d;
+  }
+  img.Group-3 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 352px;
+    height: 172px;
+    margin: 98px 87px 52px 120px;
+    object-fit: contain;
+  }
+  .Juste-Debout-School {
+    width: min-225px;
+    height: 68px;
+    margin:98px 0 0 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .-rue-de-lEst-7502 {
+    width: 198px;
+    height: 22px;
+    margin: 16px 27px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: rgb(173, 169, 169);
+  }
+  .Juste-Debout-School {
+    width: 225px;
+    height: 68px;
+    margin:98px 0 0 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: #686868;
+  }
+  .Juste-Debout-School-core {
+    width: 225px;
+    height: 68px;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: white;
+    
+  }
+  .Square-du-Caporal-Pe {
+    width: 224px;
+    height: 64px;
+    margin-top: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #686868;
+  }
+  .Square-du-Caporal-Pe .text-style-1 {
+    color: #ff90c6;
+  }
+
+  .Mentions-lgales-S {
+    width: 370px;
+    height: 22px;
+    margin: 52px 120px 20px 105px;
+    /* font-family: Poppins; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer> div{
+    flex: 1 1 0px;
+  }
+  .schoolCoreArea{
+    margin-top: 100px;
+    border-left: #686868 solid 5px;
+    padding-left: 100px;
+  }
+  .comingSoon{
+    margin-top: 100px;
+    margin-left:-110px ;
+  }
+  .lastWords{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lastWords>span{
+    flex: 1 1 0px;
+    margin-top: -25px;
+  }
+  .-Juste-Debout-2021 {
+    width: 161px;
+    height: 22px;
+    margin: 52px 278px 20px 120px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .allLogos{
+    margin-left: -7%;
+  }
+  img.PICTOSInstagram {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  img.PICTOSYoutube {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  
+  img.PICTOSFacebook {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  

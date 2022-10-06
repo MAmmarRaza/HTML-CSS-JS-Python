@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="TimeTable2.css">
+<style>
+        /* Colors Classes */
+    .Black{
+        color: black;
+    }
+    .Orange{
+        color: #fea67f;
+    }
+    .Purple{
+        color: #9e90ef;
+    }
+    .Grey{
+        color: grey;
+    }
+    .White{
+        color:white;
+    }
+
+    /* Bottom Border Classes */
+    .BBP{
+        border-bottom: #9e90ef solid 5px;
+    }
+    .BBO{
+        border-bottom: #fea67f solid 5px;
+    }
+
+    /* Body Properties*/
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 2px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:550;
+        border-spacing: 3px;
+        padding: 0;
+        margin: 0.3%;
+        text-decoration: none;
+        box-sizing: border-box;  
+    }
+
+    body div p{
+        position: relative;
+        height: 120px;
+        border: solid rgba(0, 0, 0, 0.726) 1px;
+        margin: 2px;
+    }
+
+    body div p:nth-child(1){
+        background-color: black;
+        height: 60px;
+        color: white;
+        position: relative;
+    }
+
+    /* Properties of each div in body */
+    body div{
+        min-width: 131px;
+        flex: 1 1 0;   
+    }
+    /* Column First properties */
+    .C_First{
+        min-width: 100px;
+        flex-basis: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color:white;
+        border: hidden;
+    }
+
+    /* Properties of 4th child of <p> tag of column first */
+    .C_First p:nth-child(4){
+        margin-top: 25%;
+    }
+    /* Properties of column third */
+    .C_Third{
+        min-width: 100px;
+        flex-basis: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color:white;
+        border: hidden;
+        display: none;
+    }
+
+    /* Properties of 4th child of <p> tag of column third */
+    .C_Third p:nth-child(4){
+        margin-top: 25%;
+    }
+    /* Properties of column third */
+    .C_Fourth{
+        min-width: 100px;
+        flex-basis: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color:white;
+        border: hidden;
+        display: none;
+    }
+    /* row 2 column 3 properties */
+    .r2c2{
+        background-color: #9e90ef;
+        height: 250px;
+    }
+    .r2c3{
+        height: 250px;
+    }
+    .r3c5{
+        background-color: #fea67f;
+    }
+    .LastCell{
+        height: 504px;
+    }
+    /* Center Heading of each cell */
+    .centerHeading{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 40%;
+    }
+    /* Side Column properties */
+    .S_Column{
+        border: hidden;
+        font-weight: bolder;
+        position: relative;
+    }
+    /* Side Column Time properties */
+    .SideTime{
+        color:black;
+        position:absolute;
+        top: 3%;
+        right: 5%;
+        text-align: center;
+        
+    }
+    .SideTimeL{
+        position:absolute;
+        bottom: 0%;
+        right: 5%;
+        text-align: center;
+    }
+    .SideTimeBottom{
+        text-align: end;
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .UT{ /*UpperText*/
+        position: absolute;
+        top: 3%;
+        width: 100%;
+        text-align: center;
+    }
+    .CT{ /*CenterText*/
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+    }
+    .BT{ /*BottomText*/
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+        text-align: center;  
+    }
+
+
+
+
+    @media (max-width: 1041px) {  
+
+        body div{
+            min-width: 280px;
+            max-width: 280px;
+            margin-bottom: 5%;    
+        }
+        .C_Third{
+            display:block;
+            
+        }
+        .C_Fourth{
+            display: block;
+        }
+        .LastColumn{
+            min-width: 280px;
+            max-width: 290px;
+        }
+        .LastCell{
+            min-width: 280px;
+            max-width: 350px;
+            height: 200px;
+        }
+        
+    }
+    @media (max-width: 955px) {
+        body{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        body div{
+            min-width: 330px;
+            max-width: 480px;
+            margin-bottom: 5%;    
+        }
+        body div p{
+            height: 80px;
+            margin-bottom: 0.8%;    
+        }
+        .r2c2{
+            height: 167px;
+            border-bottom: #9e90ef solid 5px;
+        }
+        .r2c3{
+            height: 167px;
+        }
+        .C_First{
+            display: none;
+        }
+        .C_Third{
+            display:none;
+        }
+        .C_Fourth{
+            display: none;
+        }
+        .LastColumn{
+            min-width: 330px;
+            max-width: 480px;
+        }
+        .LastCell{
+            min-width: 330px;
+            max-width: 480px;
+        }   
+    }
+
+    @media (max-width: 736px) {
+
+        
+        body div{
+            min-width: 280px;
+            max-width: 350px;
+            margin-bottom: 5%;    
+        }
+        body div p{
+            margin-bottom: 2%;
+        }
+        .r2c2{
+            height: 173px;
+        }
+        .LastColumn{
+            min-width: 380px;
+            max-width: 380px;
+        }
+        .LastCell{
+            min-width: 280px;
+            max-width: 480px;
+        }
+        
+    }
+    @media (max-width: 560px){
+        body div p{
+            height: 70px;
+            margin-bottom: 2%;
+        }
+        .UT{ /*UpperText*/
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            width: 100%;
+            text-align:left;
+        }
+        .CT{ /*CenterText*/
+            position: absolute;
+            width: 100%;
+            text-align: left;
+            top: 50%;
+            left: 2%;
+        }
+        .BT{ /*BottomText*/
+            position: absolute;
+            top: 25%;
+            right: 2%;
+            width: 100%;
+            text-align: right;  
+        }
+        .r2c3{
+            height: 70px;
+        }
+        .r2c2{
+            height: 70px;
+            background-color: transparent;
+            border-bottom:#9e90ef solid 5px;
+        }
+        .r2c2> span:nth-child(1){
+            color: black;
+        }
+        .r2c2> span:nth-child(3){
+            color: #9e90ef;
+        }
+        .r2c2> span:nth-child(5){
+            color: grey;
+        }
+        .r3c5{
+            background-color: transparent;
+            border-bottom:#fea67f solid 5px;
+        }
+        .r3c5> span:nth-child(1){
+            color: black;
+        }
+        .r3c5> span:nth-child(3){
+            color: #fea67f;
+        }
+        .r3c5> span:nth-child(5){
+            color: grey;
+        }
+
+        .LastColumn{
+            min-width: 300px;
+            max-width: 350px;
+        }
+        .LastCell{
+            min-width: 280px;
+            max-width: 480px;
+            height: 70px;
+        }
+    
+}
+</style>
+</head>
+<body>
+    <!-- This div will only be shown on screen which is greater than 955px-->
+    <div class="C_First">
+        <p style="background-color:transparent;border: hidden;"></p>
+        <p class="S_Column"><span class="SideTime">5:30PM</span></p>
+        <p class="S_Column" ><span class="SideTime">7:00PM</span></p>
+        <p class="S_Column"></p>
+        <p class="S_Column" ><span class="SideTime">8:30PM</span></p>
+        <p class="S_Column" ><span class="SideTimeL">10:00PM</span></p>
+    </div>
+    <div>
+            <p ><span class="centerHeading">LUN 20/10</span></p>
+            <p class="BBP"><span class="UT Black">BBOYING</span> <br> <span class="CT Purple">DYS DYS</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+            <p class="r2c2" ><span class="UT White">HIP HOP</span> <br> <span class="CT White">MAX LOOVE</span> <br> <span class="BT White">7:00pm-8:30pm</span></p>
+            <p class="BBP r2c3" ><span class="UT Black">LOCKING</span> <br> <span class="CT Purple">KOTA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        </div>    
+    <div>
+        <p><span class="centerHeading">MAR 21/10</span></p>
+        <p class="BBO"><span class="UT Black">WORKSHOP: POPPING</span> <br> <span class="CT Orange">NESS</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">BRUCE YAKANJI</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HIP-HOP</span> <br> <span class="CT Purple">SOPHIE MAY</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HOUSE DANCE</span> <br> <span class="CT Purple">JN GRAY</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        <p class="r3c5" class="BBO"><span class="UT White">WORKSHOP: HIP-HOP</span> <br> <span class="CT White">ANTOINETTE & FRNKWA</span> <br> <span class="BT White">8:30pm-10:00pm</span></p>
+    </div>
+    <div>
+        <p><span class="centerHeading">MER 22/10</span></p>
+        <p class="BBP"><span class="UT Black">KIDS</span> <br> <span class="CT Purple">CAMILLA</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">WALID</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HIP-HOP</span> <br> <span class="CT Purple">LUMISOW</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HOUSE DANCE</span> <br> <span class="CT Purple">RAZA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        <p class="BBP"><span class="UT Black">HEELS</span> <br> <span class="CT Purple">LAETITIA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+    </div>
+    <!-- This div will only be shown on screen which is between 1041px and 955px-->
+    <div class="C_Third">
+        <p style="background-color:transparent;border: hidden;"></p>
+        <p class="S_Column"><span class="SideTime">5:30PM</span></p>
+        <p class="S_Column" ><span class="SideTime">7:00PM</span></p>
+        <p class="S_Column"></p>
+        <p class="S_Column" ><span class="SideTime">8:30PM</span></p>
+        <p class="S_Column" ><span class="SideTimeL">10:00PM</span></p>
+    </div>
+    <div>
+        <p><span class="centerHeading">JEU 23/10</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">ALEX SMITH</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p class="BBP"><span class="UT Black">HOUSE DANCE</span> <br> <span class="CT Purple">RICKY SOUL</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">DANCEHALL</span> <br> <span class="CT Purple">7VEN KRIPTIC</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">DANCEHALL</span> <br> <span class="CT Purple">LINDSEY DESIR</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        <p class="BBO"><span class="UT Black">WORKSHOP: HIP-HOP</span> <br> <span class="CT Orange">ANTOINETTE & FRNKWA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+
+    </div>
+
+    <div>
+        <p><span class="centerHeading">VEN 24/10</span></th>
+        <p class="BBP"><span class="UT Black">KIDS</span> <br> <span class="CT Purple">CAMILLA</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">WALID</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HIP-HOP</span> <br> <span class="CT Purple">LUMISOW</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HOUSE DANCE</span> <br> <span class="CT Purple">RAZA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        <p class="BBP"><span class="UT Black">HEELS</span> <br> <span class="CT Purple">LAETITIA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+    </div>
+    <div>
+        <p><span class="centerHeading">SAM 25/10</span> </p>
+        <p class="BBO"><span class="UT Black">WORKSHOP: POPPING</span> <br> <span class="CT Orange">NESS</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">BRUCE YAKANJI</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HIP-HOP</span> <br> <span class="CT Purple">SOPHIE MAY</span> <br> <span class="BT Grey">7:00pm-8:30pm</span></p>
+        <p class="BBP"><span class="UT Black">HOUSE DANCE</span> <br> <span class="CT Purple">JN GRAY</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+        <p class="BBP"><span class="UT Black">POPPING</span> <br> <span class="CT Purple">KOTA</span> <br> <span class="BT Grey">8:30pm-10:00pm</span></p>
+    </div>
+    <!-- This div will only be shown on screen which is between 1041px and 955px-->
+    <div class="C_Fourth">
+        <p style="background-color:transparent;border: hidden;"></p>
+        <p class="S_Column"><span class="SideTime">5:30PM</span></p>
+        <p class="S_Column" ><span class="SideTime">7:00PM</span></p>
+        <p class="S_Column"></p>
+        
+    </div>
+    <div class="LastColumn">
+        <p><span class="centerHeading">DIM 26/10</span></th>
+        <p class="BBP"><span class="UT Black">KIDS</span> <br> <span class="CT Purple">CAMILA</span> <br> <span class="BT Grey">5:30pm-7:00pm</span></p>
+        <p  class="BBO LastCell" ><span class="UT Black">WORKSHOP: HIP-HOP</span> <br> <span class="CT Orange">ANTOINETTE & FRNKWA</span> <br> <span class="BT Grey">7:00pm-10:00pm</span></p>
+
+    </div>
+    
+        
+        
+</body>
+</html>

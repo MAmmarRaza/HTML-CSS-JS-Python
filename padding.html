@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NTU.com</title>
+    <style>
+        .tablep{ /*parent TAble*/
+            border:black solid 3px;
+            margin: 50px 100px 100px 100px;/*margin property worling here and it give margin of 100px between tablep and body corners*/
+            padding: 50px;   /*padding property also worling here, and will give 100px space to interior borders between tablep and table1*/    
+         }
+        .table1{ 
+            border:rgb(0, 0, 0) solid 10px;
+            margin:50px; /*margin property worling here and with padding it also give margin of 100px between tablep and table1*/
+            padding: 50px; /*padding property also worling here, and will give 100px space to interior borders between table1 and td1*/
+        }
+        .td1{  /*its data of table 1 that is child table */
+            border:rgb(175, 49, 179) solid 7px;
+            margin: 10px; /*margin property not worling here*/
+            padding: 50px; /*padding property worling here*/
+            border-spacing: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="tablep">
+            <tr>
+                <td>
+                    <table class="table1" cellspacing="15px">
+                    <tr class="tr1">
+                        <td class="td1">Brother</td>
+                        <td class="td1" style="font-size: 50px; text-align: center; color: purple;" >&#10084;</td>
+                        <td class="td1">Sister</td>
+                    </tr>
+                </table></td>
+              
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

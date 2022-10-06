@@ -1,0 +1,11 @@
+th{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.tr1{
+    background-color: blue;
+}
+table{
+    height: 600px;
+    width: 1000px;
+    text-align: right;
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: inter,sans-serif;
+    background-color: #171717;
+}
+.navbar{
+    background-color: #27ae5fa4;
+    height: 70px;
+}
+.header{
+    padding-left: 40px;
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 0px;
+    padding-left: 0px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+}
+.logo img{
+    margin-left: 40px;
+    display: inline;
+}
+ul{
+    list-style: none;
+    padding-right: 100px;
+    float: right;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    margin-left: 50px; 
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    color: white;
+    font-size: 40px;
+    float: right;
+    line-height: 70px;
+    display: none;
+}
+#Pbanner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+.Moh{
+    display: none;
+}
+.banner h1{
+    color: white;
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.banner p{
+    color: grey;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.btn{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.btn :nth-child(1){
+    background-color: #27ae60;
+}
+.btn button{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+.image{
+    border-radius:50%;
+    height: 350px;
+    width: 300px;
+    border:rgba(0, 0, 0, 0.288) outset 20px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 20px #27ae60;
+}
+.about{
+    text-align: center;
+    color: white;
+    white-space: pre;
+    margin-top: 50px;
+}
+.about h2{
+    font-size: 40px;
+}
+
+
+.outer{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.233);
+    border: 2px solid black;
+    margin-bottom: 10px;
+    position: relative;
+    left: 30%;
+}
+.inner{
+    height: 15px;
+    width: 15px;
+    background-color: #27ae60;
+    position: relative;
+    top: 25px;
+    left: 27px;
+    border-radius: 50%;
+    
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    gap: 79px;
+}
+/* .fourth .outer{
+    margin-left: 20px;
+} */
+
+/* SERVICES PART STARTS FROM HERE */
+
+.services{
+    color: white;
+    margin-top: 90px;
+    
+}
+.services h1{
+    text-align: center;
+}
+.Sfirst{
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.software{
+    padding: 20px 40px 10px 30px;
+    background-color: #212121;
+    width: 300px;
+    
+}
+.software img{
+    height: 30px;
+}
+.software p{
+    font-size: 25px;
+    margin-top: 20px;
+    color: #535353;
+    font-weight: bold;
+}
+
+.software2{
+    padding: 20px 40px 10px 30px;
+    background-color: #212121;
+    width: 300px;
+    
+}
+.software2 img{
+    height: 30px;
+}
+.software2 p{
+    font-size: 25px;
+    margin-top: 20px;
+    color: #535353;
+    font-weight: bold;
+}
+
+.software3{
+    padding: 20px 40px 10px 30px;
+    background-color: #212121;
+    width: 300px;
+    
+}
+.software3 img{
+    height: 30px;
+}
+.software3 p{
+    font-size: 25px;
+    margin-top: 20px;
+    color: #535353;
+    font-weight: bold;
+}
+
+/* SKILLS PART STARTS FORM HERE */
+
+.skills h1{
+    color: white;
+    margin-top: 90px;
+    text-align: center;
+}
+.allskills{
+    background-color: #212121;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.percent h1{
+    color: #535353;
+    font-size: 50px;
+}
+.percent p{
+    color: #27ae60;
+    margin-left: 10px;
+}
+
+/* Forms starts here */
+.forms h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+textarea{
+    width: 720px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: #535353 2px solid;
+    margin-left: 20px;
+    resize: none;
+    padding: 10px;
+    color: #535353;
+    font-size: 15px;
+
+}
+textarea:focus{
+    outline: none;
+}
+form{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(4,150);
+    grid-template-columns: repeat(autofit , minmax(350px,1fr));
+    row-gap: 50px;
+    
+}
+
+form input{
+    width: 350px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: #535353 2px solid;
+    margin-left: 20px;
+    padding: 10px;
+    color: #535353;
+    font-size: 15px;
+    
+}
+form input:focus{
+    outline: none;
+}
+/* Change the white to any color */
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover, 
+form input:-webkit-autofill:focus, 
+form input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px #171717 inset !important;
+    -webkit-text-fill-color: #535353 !important;
+}
+.submit{
+    background-color: #27ae60;
+    color: white;
+    border-radius: 10px;
+    margin-left: 200px; 
+    
+}
+.copyright{
+    color: #535353;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width: 1124px){
+    .image{
+        margin-left: -40px;
+    }
+    ul{ 
+        background-color: #535353;
+        width: 100%;
+        padding-top: 0px;
+        position: absolute;
+        left: -100%;
+        transition:all 0.5s;
+        margin-top: 0px;
+        border-right:3px  #27ae60 solid;
+        border-bottom:3px  #27ae60 solid;
+        border-bottom-right-radius: 50px;
+
+    }
+    ul li{
+        display: block;
+    }
+    ul li a{
+        padding: 10px 25px; 
+        font-size: 20px;
+    }
+    ul li:hover a{
+        background-color: #27ae5f9d;
+        border-radius: 25px;
+        
+    }
+    .checkbtn{
+        display: block;
+        position:absolute;
+        top: 0px;
+        right: 20px;
+        padding-right: 40px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 1046px){
+    .Sfirst{
+        gap: 2%;
+    }
+}
+@media (max-width: 937px){
+    .first{
+        width: 40%;
+    }
+    .second{
+        width: 40%;
+    }
+    .third{
+        width: 40%;
+    }
+    .fourth{
+        width: 40%;
+    }
+    .outer{
+        position: relative;
+        left: 40%;
+    }
+    .software{
+        width: 50%;
+        border-bottom: 2px solid #27ae60 ;
+    }
+    .software2{
+        width: 50%;
+        margin-top: 15px;
+    }
+   .software3{
+       width: 50%;
+       margin-top: 15px;
+       border-bottom: 2px solid #27ae60 ;
+   }
+   .about p{
+       white-space: normal;
+   }
+    
+}
+@media (max-width: 770px) {
+    form{
+        gap: 20px;
+    }
+    textarea{
+        width: 58%;
+        margin-left: 19px;
+        margin-top: 20px;
+    }
+    .submit{
+        margin-left: 20px;
+        width: 30%;
+
+    }
+    .header{
+        padding-left: 0px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .checkbtn{
+        font-size: 28px;
+        top: 11px;
+        right: 0px;
+    }
+    form span :nth-child(2){
+        margin-top: 20px;
+    }
+}
+@media (max-width:480px) {
+    
+    .first{
+        width: 50%;
+    }
+    .second{
+        width: 50%;
+    }
+    .third{
+        width: 50%;
+    }
+    .fourth{
+        width: 50%;
+    }
+    .outer{
+        position: relative;
+        left: 35%;
+    }
+    form input{
+        width: 70%;
+    }
+    .logo{
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    .checkbtn{
+        margin-top: -8px;
+        font-size: 20px;
+        transition: 0.5s;
+        padding-right: 15px;
+    }
+    .header img{
+        height: 60px;
+        width: 80px;
+    }
+    .image{
+        margin-left: 2px;
+    }
+    .software{
+        width: 100%;
+    }
+    .software2{
+        width: 100%;
+        margin-top: 15px;
+    }
+   .software3{
+       width: 100%;
+       margin-top: 15px;
+   }
+    
+}
+@media (max-width: 374px) {
+    .Moh{
+        display: block;
+    }
+    .moh{
+        display: none;
+    }
+    .logo{
+        font-size: 22px;
+        transition: 0.5s;
+        transition: 0.5s;
+    }
+    .checkbtn{
+        font-size: 18px;
+        transition: 0.5s;
+        padding-right: 15px;
+        transition: 0.5s;
+    }
+    #Pbanner{
+        gap: 30px;
+        transition: 0.5s;
+       
+    }
+    .image{
+        border-radius:50%;
+        height: 300px;
+        width: 250px;
+        border:rgba(0, 0, 0, 0.288) outset 10px;
+        box-shadow: 0px 0px 10px #27ae60;
+        transition: 0.5s;
+    }
+    .btn :nth-child(2){
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+
+    .banner h1{
+        color: white;
+        padding-left: 20px;
+        font-size: 40px;
+        transition: 0.5s;
+    }
+    
+    .banner p{
+        color: grey;
+        padding-left: 20px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .btn{
+        padding-left: 20px;
+    }
+    ul li a{
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+}
+
+
+    </style>
+</head>
+<body id="Home">
+    <div class="navbar" style="position:sticky; top:0;">
+        <input type="checkbox" id="check">
+       <label class="header" for=""> <img src="https://drive.google.com/uc?export=view&id=1p7SCebXPqDoYD3mauwmFD442B_nayAPA" height="70px" width="100px" alt=""><span class="logo" > Ammar / Raza</span></label>
+            <ul>
+               <li><a href="#Home">Home</a></li>
+               <li><a href="#AboutMe">About me</a></li>
+               <li><a href="#MyServices">Services</a></li>
+               <li><a href="#MyContact">Contact me</a></li>
+           </ul>
+       
+           <label for="check" class="checkbtn">
+               <i class="fas fa-bars"></i>
+           </label>
+    </div>
+   <div id="Pbanner">
+       <div class="banner">
+           <div>
+               <h1>Hi, I am <br><span class="Moh">M. Ammar Raza</span><span class="moh">Muhammad Ammar Raza</span></h1>
+               <p>Frontend Developer</p>
+           </div>
+           <div class="btn">
+               <button style="cursor:pointer;" >Download CV</button>
+               <button style="cursor:pointer;">Learn More</button>   
+           </div>
+       </div>
+       <div>
+           <img class="image" src="https://drive.google.com/uc?export=view&id=1bvY6LCeYHJKuFnC4EdJKR7TvU1ztXMMd" alt="">
+       </div>
+   </div>
+   <div id="AboutMe"></div>
+   <div class="about">
+       <h2>About</h2>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cum, iure velit reprehenderit hic quidem
+            sint voluptatem ex excepturi nisi perspiciatis quas voluptates temporibus, nobis minus ducimus.
+             Nulla et porro unde placeat, adipisci ex, deleniti vitae dolores tenetur ad eaque
+              doloribus! Earum soluta libero odit perferendis veniam
+               ex aperiam quidem.</p>
+   </div>
+   <div id="MySerivices"></div>
+   <div class="info">
+       <div class="first">
+           <section class="outer">
+               <section class="inner"></section>
+           </section>
+           <p>Full Name</p>
+           <p>Muhammad Ammar Raza</p>
+       </div>
+       <div class="second">
+           <section class="outer">
+               <section class="inner"></section>
+           </section>
+           <p>Email Address</p>
+           <p>ammarqadri280@gmail.com</p>
+       </div>
+       <div class="third">
+           <section class="outer">
+               <section class="inner"></section>
+           </section>
+           <p>Facebook</p>
+           <p>https://www.facebook.com....</p>
+       </div>
+       <div class="fourth">
+           <section class="outer">
+               <section class="inner"></section>
+           </section>
+           <p>Phone</p>
+           <p>+923038876956</p>
+       </div>
+   </div>
+   <div id="MyServices"></div>
+   <div  class="services">
+    <h1 for="">What i do</h1>
+    <div class="Sfirst">
+        <div class="software">
+            <img src="https://drive.google.com/uc?export=view&id=1ui4Zn5A5x5HEJErAQkzZJ4OeS9GXgxlx" alt="">
+            <p>Software <br>Development</p>
+        </div>
+        <div style="border-bottom: 3px solid #27ae60 ;" class="software2">
+            <img src="https://drive.google.com/uc?export=view&id=11sIdbjijfzmw1UqR5DVEKglR9tQ1E_1u" alt="">
+            <p>Website <br>Development</p>
+        </div>
+        <div class="software3">
+            <img src="https://drive.google.com/uc?export=view&id=1E2sXlX4VORKZv7Tg20j1O11qkW9ecyjQ" alt="">
+            <p>Web <br>Designing</p>
+        </div>
+    </div>
+</div>
+   <div id="MySkills"></div>
+   <div class="skills">
+       <h1>
+           My Skills
+       </h1>
+       <div class="allskills">
+           <div class="percent">
+               <h1>60%</h1>
+               <p>HTML</p>
+           </div>
+           <div class="percent">
+               <h1>50%</h1>
+               <p>CSS</p>
+           </div>
+           <div class="percent">
+               <h1>10%</h1>
+               <p>JavaScript</p>
+           </div>
+           <div class="percent">
+               <h1>30%</h1>
+               <p>Bootstrap</p>
+           </div>
+           <div class="percent">
+               <h1>20%</h1>
+               <p>Wordpress</p>
+           </div>
+       </div>
+   </div>
+   <div id="MyContact"></div>
+   <div class="forms">
+       <h1>Get in touch</h1>
+       <form action="" >
+           <span>
+               <input type="text" placeholder="Name" name="" id="">
+               <input type="text" placeholder="Last Name" name="" id="">
+           </span>
+           <span>
+               <input type="email" placeholder="Email" name="" id="">
+               <input type="tel" placeholder="Phone Number" name="" id="">
+           </span>
+           <span>
+               <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+           </span>
+           <span >
+               <input style="cursor:pointer;" class="submit" type="submit" name="" id="">
+           </span>
+       </form>
+   </div>
+   <p class="copyright">&#169; AmmarRaza 2021</p>
+       
+   
+   
+   </body>
+</html>

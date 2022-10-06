@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InfixPostfix2</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+        
+    </head>
+<style>
+    body{
+    margin:0;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(to right, rgb(226, 225, 225), rgba(0, 0, 247, 0.562));
+    /* background-color: rgb(221, 220, 228); */
+    /* background: linear-gradient(to right, rgb(212, 209, 209),rgb(201, 196, 196),rgb(219, 214, 214),rgb(173, 168, 168),rgb(218, 213, 213),rgb(175, 172, 179),rgb(221, 216, 216)); */
+}
+#form1{
+    border: 2px solid black;
+    text-align: center;
+    /* background-image: linear-gradient(rgba(253, 251, 251, 0.6),rgb(2, 97, 45)); */
+    background-image: linear-gradient(rgba(12, 7, 58, 0.7),rgba(0,0,0,0.8)),url(img/dots-gfde0d1382_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    
+}
+h3{
+        font-style: italic;
+    }
+#form1>div{
+    color: white;
+    margin-top: 13%;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: -10px;
+    font-style: italic;
+}
+h2{
+    font-size: 31px;
+    margin-bottom: -15px;
+    font-family: calibri;
+}
+h4{
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 30px;
+    font-family: calibri;
+}
+#content{
+    font-size: 20px;
+    font-family: calibri;
+}
+.input{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    font-size:x-large;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 0px;
+    border-style: outset;
+}
+.input:focus{
+    outline: none;
+}
+.input:hover{
+    box-shadow: 0 0 10px white;
+}
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    color: white;
+    font-weight: bolder;
+}
+table{
+    /* border: 1px solid black; */
+    width:100%;
+    /* padding: 25px; */
+    font-size:x-large;
+    text-align: center;
+    visibility: hidden;
+    color: white;
+}
+table>:nth-child(1){
+    border-bottom: 2px solid black;
+}
+th{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+table{
+    border: 2px black inset;
+}
+table>:nth-child(1){
+    border-bottom: 2px black solid;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.6),rgb(2, 16, 97));
+}
+@media (max-width: 810px) {
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    
+    h4{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 656px) {
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* body{
+        padding-left: 5px;
+        padding-right: 5px;
+    } */
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    h4{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .input{
+        height: 30px;
+        width: 200px;
+    }
+    button{
+        width: 130px;
+        height: 35px;
+    }
+    table{
+        font-size:large;
+       }
+       #content{
+        font-size: 18px;
+    }
+}
+@media (max-width: 400px) {
+    /* h1{
+        margin-top: 40%;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 8px;
+        margin-bottom: -10px;
+    }
+    h4{
+        font-size: 10px;
+        line-height: 10px;
+    } */
+    .input{
+        height: 20px;
+        width: 150px;
+        font-size: small;
+    }
+    button{
+        width: 70px;
+        height: 25px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    table{
+        font-size:medium;
+       }
+    #content{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 300px) {
+     h1{
+        margin-top: 20%;
+        font-size: 25px;
+    }
+    h2{
+        font-size: 12px;
+        margin-bottom: -3px;
+    }
+    h4{
+        font-size: 10px;
+        line-height: 10px;
+    }
+   table{
+    font-size:medium;
+   }
+}
+@media (max-width: 200px) {
+    table{
+     font-size:small;
+    }
+ }
+</style>
+<body>
+
+    <div id="form1" action="">
+        <div>
+            <h1>Infix To Postfix Converter</h1>
+            <h2>Enter the Infix expression below in box and press Convert</h2>
+            <h4>Type the Expression below without space <br>
+                format 1: 2+4/5*(5-3)^5^4 <br>
+                format 2: A+B/C*(D-A)^F^H <br>
+                (NO SPACE)</h4>
+        </div>
+        <label  for=""></label>
+        <input class="input" type="text" name="" id=""> <br>
+        <button onclick="calculate()">Convert</button>
+    </div>
+    <P id="p"></P>
+    
+    <table id="table1" >
+        <!-- <tr>
+            <th>Ser. NO.</th>
+            <th>Expression</th>
+            <th>Postfix</th>
+            <th>Stack</th>
+        </tr> -->
+    </table>
+    <div id="content">
+        <h3>Conversion of infix to postfix</h3>
+        <p>Here, we will use the stack data structure for the conversion of infix expression to prefix expression. Whenever an operator will encounter, we push operator into the stack. If we encounter an operand, 
+            then we append the operand to the expression.</p>
+        <h3>Rules for the conversion from infix to postfix expression</h3>
+        <ol>
+            <li>Print the operand as they arrive.</li>
+            <li>If the stack is empty or contains a left parenthesis on top, push the incoming operator on to the stack.</li>
+            <li>If the incoming symbol is '(', push it on to the stack.</li>
+            <li>If the incoming symbol is ')', pop the stack and print the operators until the left parenthesis is found.</li>
+            <li>If the incoming symbol has higher precedence than the top of the stack, push it on the stack.</li>
+            <li>If the incoming symbol has lower precedence than the top of the stack, pop and print the top of the stack. Then test the incoming operator against the new top of the stack.</li>
+            <li>If the incoming operator has the same precedence with the top of the stack then use the associativity rules. If the associativity is from left to right then pop and print the top of the stack then push the incoming operator. If the associativity is from right to left then push the incoming operator.</li>
+            <li>At the end of the expression, pop and print all the operators of the stack.</li>
+        </ol>  
+    </div>
+
+
+<script type="text/javascript">
+////3
+class Stack{
+    stackArray=[]
+    constructor(){
+        this.top=-1
+    }
+    push(x){
+            this.top=this.top+1
+            this.stackArray[this.top]=x
+    }
+    pop(){
+        
+        this.top=this.top-1
+    }
+    isEmpty(){
+        return this.top==-1
+    }
+    peek(){
+        return this.stackArray[this.top]
+    }
+    Display(){
+        
+        for(var i=0;i<=this.top;i++){
+            if(i==this.top){
+                document.write(this.stackArray[i],"---->NULL")
+            }
+            else
+            document.write(this.stackArray[i],"---->")
+        }
+    }
+    Operataor(op){
+    if(op=='+' || op=='-' || op=='*' || op=='/' || op=='^' || op=='('){
+            return true;
+        }
+    }
+    Priority(op){
+        if(op=='+' || op=='-'){
+            return 1;
+        }
+        if(op=='*' || op=='/'){
+            return 2;
+        }
+        if(op=='^'){
+            return 3;
+        }
+        else
+            return 0;
+    }
+    IsOperand(op){
+        if(op>='A' && op<='Z'){
+            return true
+        }
+        else if(op>='a' && op<='z'){
+            return true
+        }
+        else if(op>='0' && op<='9'){
+            return true
+        }
+        else
+            return false
+    }
+
+    infixToPostfix(infix){
+                let row = document.getElementById("table1").insertRow();
+                let cell4= row.insertCell();
+                let text4 = document.createTextNode("Sr. No");
+                cell4.appendChild(text4);
+                let cell5= row.insertCell();
+                let text5 = document.createTextNode("Expression");
+                cell5.appendChild(text5);
+                let cell6= row.insertCell();
+                let text6 = document.createTextNode("Postfix");
+                cell6.appendChild(text6);
+                let cell7= row.insertCell();
+                let text7 = document.createTextNode("Stack");
+                cell7.appendChild(text7);
+                let postfix=[]
+                let result=[]
+                var j=0,x,k=0;
+                for(var i=0;i<infix.length;i++){
+                    //alert(this.stackArray)
+                    if(this.IsOperand(infix[i])){
+                        postfix[j++]=infix[i]
+                    }
+                    else if(!this.isEmpty() && infix[i]=='('){
+                        this.push(infix[i])
+                    }
+                    else if(infix[i]==')'){
+                        while(this.stackArray[this.top]!='('){
+                            //alert(this.stackArray[this.top])
+                            postfix[j++]=this.stackArray[this.top]
+                            this.pop()
+                            delete this.stackArray[this.top+1]
+                            //alert(this.stackArray[this.top])
+                        }
+                        if(this.stackArray[this.top]=='('){
+                           // alert(this.stackArray[this.top])
+                            this.pop()
+                            delete this.stackArray[this.top+1]
+                            //alert(this.stackArray[this.top])
+                        }
+                    }
+                    else{
+                        while(!this.isEmpty() && (this.Priority(infix[i])<=this.Priority(this.stackArray[this.top]))){
+                            //this.pop()
+                            postfix[j++]=this.stackArray[this.top]
+                            this.pop()
+                            delete this.stackArray[this.top+1]
+                        }
+                        this.push(infix[i])
+                    }
+                    // alert(this.stackArray+"   top: "+this.stackArray[this.top])
+                    let output=postfix.map(function (el){
+                        return el;
+                    });
+                    let output2=this.stackArray.map(function (el){
+                         //alert(el)
+                        return el;
+                    });
+                        let row = document.getElementById("table1").insertRow();
+                        let cell3= row.insertCell();
+                        let text3 = document.createTextNode(k);
+                        cell3.appendChild(text3);
+                        let cell0= row.insertCell();
+                        let text0 = document.createTextNode(infix[i]);
+                        cell0.appendChild(text0);
+                        let cell1= row.insertCell();
+                        let text1 = document.createTextNode(output.join(''));
+                        cell1.appendChild(text1);
+                        let cell4= row.insertCell();
+                        let text4 = document.createTextNode(output2.join(''));
+                        cell4.appendChild(text4);
+                        output.length=0
+                        output2.length=0
+                        k=k+1
+                        // alert(this.stackArray[this.top])
+                }                
+                while(!this.isEmpty()){
+                    postfix[j++]=this.stackArray[this.top]
+                    this.pop()
+                    delete this.stackArray[this.top+1]
+                    let output=postfix.map(function (el){
+                        return el;
+                    });
+                    let output2=this.stackArray.map(function (el){
+                        return el;
+                    });
+                        let row = document.getElementById("table1").insertRow();
+                        let cell3= row.insertCell();
+                        let text3 = document.createTextNode(k);
+                        cell3.appendChild(text3);
+                        let cell0= row.insertCell();
+                        let text0 = document.createTextNode("");
+                        cell0.appendChild(text0);
+                        let cell1= row.insertCell();
+                        let text1 = document.createTextNode(output.join(''));
+                        cell1.appendChild(text1);
+                        let cell4= row.insertCell();
+                        let text4 = document.createTextNode(output2.join(''));
+                        cell4.appendChild(text4);
+                        output.length=0
+                        output2.length=0
+                        k=k+1
+                        //alert(this.stackArray[this.top])
+                    }
+                //console.log(postfix)
+     }
+}
+    
+
+function calculate(){
+    document.getElementById("table1").innerHTML=''
+    document.getElementById("table1").style.visibility="visible"
+    let s=new Stack()
+    let value=document.getElementById("form1").children[2].value
+    infix=Array.from(value)
+    s.infixToPostfix(infix)        
+    }
+    
+            
+            
+            
+
+</script>
+    
+</body>
+</html>

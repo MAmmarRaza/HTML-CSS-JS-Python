@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+    </head>
+<body>
+
+    <script>
+        let myString="My Name is Ammar is happy  ";
+        var string2="   trim() function remves spaces  ";
+//1 length method give length of string
+        document.write("i==>  "+ myString.length + "<br>ii==>  ");
+//2 indexOf() give index of input string
+        document.write(myString.indexOf("is") + "<br>iii==>  ");
+//3 lastIndexOf("") give index from last
+        document.write(myString.lastIndexOf("is") + "<br>iv==>  ");
+//4 replace("","") is used for replacing string with another thing
+        document.write(myString.replace("is"," ") + "<br>");
+        document.write(myString.replace(/is/g," ") + "<br>v==>  ");
+//5 toLowerCase()
+        document.write(myString.toLowerCase() + "<br>vi==>  ");
+//6 toUpperCase()
+        document.write(myString.toUpperCase() + "<br>vii==>  ");
+//7 includes() check either given string or characters exist or not and returns true or false
+        document.write(myString.includes("mar") + "<br>viii==>  ");
+//8 startsWith("first-thing") check the first string or character
+        document.write(myString.startsWith("My") + "<br>ix==>  ");
+//9 endsWith("last thing")
+        document.write(myString.endsWith("happy") + "<br>x==>  ");
+//10 search() returns index of searched thing, if not get that thing give -1 otherwises
+        document.write(myString.search("Ammar") + "<br>xi==>  ");
+//11 match(/""/g(globally)) returns an array of search thing , it doesnot matters how many time that string occuring
+        document.write(myString.match(/is/g) + "<br>xii==>  ");
+// trim() remove extra spaces from left or right
+       // alert(string2.trim(),"<br>");
+//12 charAt(index) gives character at that index
+        document.write(myString.charAt(12) + "<br>xiii==>  ");
+//13 charCodeAt() gives ASCII code
+        document.write(myString.charCodeAt(1) + "<br>xiv==>  ");
+//14 fromcharCode() gives character at Ascii code
+        document.write(String.fromCharCode(110) + "<br>xv==>  ");
+//15 concat() is to join strings
+        var a=myString.concat(string2, "----");
+        document.write(a + "<br>xvi==>  ");
+//16 split() split string into character array and split from where you give entry
+        document.write(myString.split(" ") + "<br>xvii==>  ");
+//17 repeat() is to repeat string
+        document.write(myString.repeat(2) + "<br>xviii==>  ");
+//18 substr() it will pick up the character of domain given, it has starting point and count from it the next ending point
+        document.write(myString.substr(10,12) + "<br>xix==>  ");
+//19 slice(1,2) gives string of input index defined length, it is different from subString() that it will also count the 6th index
+        document.write(myString.slice(0,6) + "<br>xx==>  "); 
+//20 subString
+        document.write(myString.substring(0,6) + "<br>xxi==>  ");
+//21 toString convert anything into string
+        var   mynum=12;
+        var   mystring3=mynum.toString();
+        document.write(mynum + 20 + " " + mystring3 + 20 + "<br>xxii==>  ");
+//22 valueOf() is to print string
+         document.write( myString + "<br>");
+  
+     
+    </script>
+</body>
+</html>

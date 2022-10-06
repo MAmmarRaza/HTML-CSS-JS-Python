@@ -1,0 +1,122 @@
+body{
+    background-color: grey;
+}
+/* #body1{
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/07/20/18/istanbul-2381434_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px 600px;
+  }
+  /*h1
+  {
+      font-size: 50px;
+      font-style: italic;
+
+  }
+
+  h2
+  {
+      font-size: 25px;
+      margin-top: -20px;
+      font-style: italic;
+      
+  }
+  .moon{
+      color: white;
+      border:white 2px solid;
+      border-radius: 5px;
+      font-size: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      height: 50px;
+      width: 200px;
+      padding: 0px 0px 0px 20px;
+      outline: blue;
+      outline-width: 5px;
+  }
+  span{
+      color: rgba(0, 0, 0, 0.726);
+      margin-left: 3px;
+  }
+ 
+  .btn
+  {
+      color: black;
+      background-color: black;
+      color: blanchedalmond;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      margin-left: 10px;
+      font-style: italic;
+      margin-top: 20px;
+  }
+  .btn:hover{
+    color: black;
+    background-color: white;
+  }
+ 
+  #button{
+      margin-left: 900px;
+  }
+
+  .dot{
+      margin-top: 150px;
+      color: transparent;
+  }
+  .content{
+    border:black 10px solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 230px;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 30px;
+    padding:0px 20px 20px 20px;
+    border-radius:15px;
+    color: black;
+  }
+  .content:hover{
+    border:brown 5px double;
+    background-color:transparent;
+    border-radius:0px;
+    color: white;
+  }
+   */
+#imgpara{
+    height: 200px;
+    width: 1220px;
+    background-color: aliceblue;
+    border: black 5px solid;
+    
+}
+.img0{
+    float: left;
+    height:200px;
+     width:400px;
+}
+.para1{
+    float: left;
+    height: 200px;
+    width: 390px;
+    background-color: rgba(0, 0, 255, 0.596);
+    margin-top: -2px;
+    padding: 10px 10px 10px 10px;
+}
+.para2{
+    float: right;
+    height: 200px;
+    width: 390px;
+    background-color: rgba(128, 255, 0, 0.562);
+    margin-top: -2px;
+    padding: 10px 10px 10px 10px;
+   
+}
+/*.anc{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: black 5px solid;
+    border-radius: 5px;
+}
+.links{
+    height: 200px;
+    width: 400px;
+}*/

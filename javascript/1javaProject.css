@@ -1,0 +1,50 @@
+body{
+    background: linear-gradient(to right, rgb(212, 209, 209),rgb(201, 196, 196),rgb(219, 214, 214),rgb(173, 168, 168),rgb(218, 213, 213),rgb(175, 172, 179),rgb(221, 216, 216));
+    color: white;
+}
+#container{
+    position: relative;
+    left: 400px;
+    top: 180px;
+    height: 300px;
+    width: 600px;
+    border: gray 25px outset;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(103, 24, 194, 0.4)),url(images/pocket-watch-2031021_1920.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+   box-shadow: 0px 0px 10px black;
+}
+#hours,#minutes,#seconds{
+    font-size: 100px;
+}
+#time{
+    position: relative;
+    left: 6%;
+    
+}
+fieldset{
+    width: 500px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+legend{
+    font-size: 30px;
+    margin-left: 180px;
+    color: rgb(157, 230, 115);
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#day{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(226, 224, 230);
+    border-bottom: 4px double white;
+    width: 400px;
+    margin-left: 100px;
+    margin-bottom: 32px;
+    
+}

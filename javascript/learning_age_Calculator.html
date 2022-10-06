@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>document</title>
+</head>  
+<body>  
+
+    <script>  
+      
+             
+            var dob = new Date('May 7 2000'); 
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            document.write(weekday[dob.getDay()]+"<br>");
+            
+            //calculate month difference from current date in time  
+            var month_diff = Date.now() - dob.getTime(); 
+            document.write(month_diff+ "<br>"); 
+              
+            //convert the calculated difference in date format  
+            var age_dt = new Date(month_diff); 
+            document.write(age_dt+ "<br>");  
+              
+            //extract year from date      
+            var year = age_dt.getUTCFullYear();  
+            document.write(year+ "<br>");
+              
+            //now calculate the age of the user  
+            var age = Math.abs(year - 1970);
+            document.write(age);  
+              
+    </script>  
+</body>  
+</html>  

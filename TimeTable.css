@@ -1,0 +1,87 @@
+table {
+    table-layout:fixed ;
+    width: 100% ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-spacing: 3px;
+    height: 700px;
+}
+table tr th{
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+table tr td{
+    position: relative;
+
+}
+.S_Column{
+    border: hidden;
+    background-color: transparent;
+    width: 6%;
+    font-weight: bolder;
+    position: relative;
+}
+
+.SideTime{
+    color:black;
+    position:absolute;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+    
+}
+.SideTimeBottom{
+    text-align: end;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;  
+}
+
+.UT{ /*UpperText*/
+    color:black;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+}
+.CT{ /*CenterText*/
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.BT{ /*BottomText*/
+    text-align: end;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;  
+}
+
+
+.R2C2{
+    background-color: #9e90ef;
+}
+
+.Black{
+    color: black;
+}
+.Orange{
+    color: #fea67f;
+}
+.Purple{
+    color: #9e90ef;
+}
+.Grey{
+    color: gray;
+}
+.White{
+    color: white;
+}
+.BBP{
+    border-bottom: #9e90ef solid 5px;
+}
+.BBO{
+    border-bottom: #fea67f solid 5px;
+}

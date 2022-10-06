@@ -1,0 +1,20 @@
+body{
+    background: linear-gradient(to right, grey , rgb(240, 236, 236),grey , rgb(240, 236, 236),grey , rgb(240, 236, 236));
+}
+
+#banner{
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.414) , rgba(7,5,15, 0.427)), url(img/wolves-1400819.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 7%;
+    box-shadow: 0px 0px 20px rgb(245, 6, 6);
+    /* padding: 7%; */
+    /* padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 7%;
+    padding-bottom: 7%; */
+
+    /* top right bottom left */
+    padding: 7% 2% 7% 2%;
+}

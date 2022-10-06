@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tree</title>
+    </head>
+<body>
+    <h1>Heading:</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptas cum dicta maiores eveniet deleniti repellendus autem cumque sequi. Voluptatem provident quia sit enim dolorem, quo atque vero maxime vel!</p>
+    <button onclick="calculate()">Click here</button>
+
+<script type="text/javascript">
+
+class TreeNode{
+    constructor(data, left = null,right=null){
+        this.data = data
+        this.left = left
+        this.right=right
+    }
+    
+   
+}
+
+function InsertNode(root,info){
+    let node=new TreeNode(info)
+    let p,q
+    p=q=root
+    while(info!=p.data && q!=null){
+        p=q
+        if(info<p.data){
+            q=p.left
+        }
+        else{
+            q=p.right
+        }          
+    }
+    
+    if(info==p.data){
+        document.write("you are attempting inset duplicate node!!",info)
+        delete node
+    }
+    else if(info<p.data){
+        p.left=node
+    }
+    else{
+        p.right=node
+    }
+}
+
+function InOrder(tree){
+    if(tree!=null){
+        InOrder(tree.left)
+        document.write(tree.data," ")
+        InOrder(tree.right)
+    }
+}
+
+function PostOrder(tree){
+    if(tree!=null){
+        PostOrder(tree.left)
+        PostOrder(tree.right)
+        document.write(tree.data," ")
+        
+    }
+}
+
+function PreOrder(tree){
+    if(tree!=null){
+        document.write(tree.data," ")
+        PreOrder(tree.left)
+        PreOrder(tree.right)
+    }
+}
+
+
+function calculate(){
+    let node= [14,15,4,9,7,18,3,5,-1];
+    let root=new TreeNode()
+    root.data=node[0]
+    var i=1
+    while(node[i]>0){
+        InsertNode(root,node[i])
+        i++
+    }
+    document.write("<br>InOrder:   ")
+    InOrder(root)
+    document.write("<br>PostOrder: ") //<br> for new line tag
+    PostOrder(root)
+    document.write("<br>PreOrder:  ")
+    PreOrder(root)
+}
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title DOM</title>
+        <style>
+            #outer{
+                height: 250px;
+                width: 1000px;
+                background-color: rgb(119, 17, 10);
+                padding: 70px;
+            }
+            #inner{
+                height: 100px;
+                width: 900px;
+                background-color: rgb(209, 120, 108);
+                padding: 50px 20px 50px 20px;
+
+            }
+            .minner{
+                text-align: center;
+                display: inline;
+                border: 2px solid black;
+                margin: 50px;
+                padding: 30px;
+                background-color: white;
+            }
+        </style>
+    </head>
+<body>
+    <div id="outer"> <b>Outer</b>
+        <div id="inner"> <i id="child-head">inner</i><br>
+            <div class="minner">A</div>
+            <!--A-->
+            <div class="minner">B</div>
+            <div id="child-C" class="minner">C</div>
+            <div class="minner">D</div>
+            <div class="minner" id="child-E">E</div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="DOM2.js"></script>
+</body>
+</html>

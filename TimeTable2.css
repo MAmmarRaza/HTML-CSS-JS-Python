@@ -1,0 +1,326 @@
+/* Colors Classes */
+.Black{
+    color: black;
+}
+.Orange{
+    color: #fea67f;
+}
+.Purple{
+    color: #9e90ef;
+}
+.Grey{
+    color: grey;
+}
+.White{
+    color:white;
+}
+
+/* Bottom Border Classes */
+.BBP{
+    border-bottom: #9e90ef solid 5px;
+}
+.BBO{
+    border-bottom: #fea67f solid 5px;
+}
+
+/* Body Properties*/
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:550;
+    border-spacing: 3px;
+    padding: 0;
+    margin: 0.3%;
+    text-decoration: none;
+    box-sizing: border-box;  
+}
+
+body div p{
+    position: relative;
+    height: 120px;
+    border: solid rgba(0, 0, 0, 0.726) 1px;
+    margin: 2px;
+}
+
+body div p:nth-child(1){
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: relative;
+}
+
+/* Properties of each div in body */
+body div{
+    min-width: 131px;
+    flex: 1 1 0;   
+}
+/* Column First properties */
+.C_First{
+    min-width: 100px;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color:white;
+    border: hidden;
+}
+
+/* Properties of 4th child of <p> tag of column first */
+.C_First p:nth-child(4){
+    margin-top: 25%;
+}
+/* Properties of column third */
+.C_Third{
+    min-width: 100px;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color:white;
+    border: hidden;
+    display: none;
+}
+
+/* Properties of 4th child of <p> tag of column third */
+.C_Third p:nth-child(4){
+    margin-top: 25%;
+}
+/* Properties of column third */
+.C_Fourth{
+    min-width: 100px;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color:white;
+    border: hidden;
+    display: none;
+}
+/* row 2 column 3 properties */
+.r2c2{
+    background-color: #9e90ef;
+    height: 250px;
+}
+.r2c3{
+    height: 250px;
+}
+.r3c5{
+    background-color: #fea67f;
+}
+.LastCell{
+    height: 504px;
+}
+/* Center Heading of each cell */
+.centerHeading{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+}
+/* Side Column properties */
+.S_Column{
+    border: hidden;
+    font-weight: bolder;
+    position: relative;
+}
+/* Side Column Time properties */
+.SideTime{
+    color:black;
+    position:absolute;
+    top: 3%;
+    right: 5%;
+    text-align: center;
+    
+}
+.SideTimeL{
+    position:absolute;
+    bottom: 0%;
+    right: 5%;
+    text-align: center;
+}
+.SideTimeBottom{
+    text-align: end;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;  
+}
+
+.UT{ /*UpperText*/
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+}
+.CT{ /*CenterText*/
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+}
+.BT{ /*BottomText*/
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;  
+}
+
+
+
+
+@media (max-width: 1041px) {  
+
+    body div{
+        min-width: 280px;
+        max-width: 280px;
+        margin-bottom: 5%;    
+    }
+    .C_Third{
+        display:block;
+        
+    }
+    .C_Fourth{
+        display: block;
+    }
+    .LastColumn{
+        min-width: 280px;
+        max-width: 290px;
+    }
+    .LastCell{
+        min-width: 280px;
+        max-width: 350px;
+        height: 200px;
+    }
+    
+}
+@media (max-width: 955px) {
+    body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    body div{
+        min-width: 330px;
+        max-width: 480px;
+        margin-bottom: 5%;    
+    }
+    body div p{
+        height: 80px;
+        margin-bottom: 0.8%;    
+    }
+    .r2c2{
+        height: 167px;
+        border-bottom: #9e90ef solid 5px;
+    }
+    .r2c3{
+        height: 167px;
+    }
+    .C_First{
+        display: none;
+    }
+    .C_Third{
+        display:none;
+    }
+    .C_Fourth{
+        display: none;
+    }
+    .LastColumn{
+        min-width: 330px;
+        max-width: 480px;
+    }
+    .LastCell{
+        min-width: 330px;
+        max-width: 480px;
+    }   
+}
+
+@media (max-width: 736px) {
+
+    
+    body div{
+        min-width: 280px;
+        max-width: 350px;
+        margin-bottom: 5%;    
+    }
+    body div p{
+        margin-bottom: 2%;
+    }
+    .r2c2{
+        height: 173px;
+    }
+    .LastColumn{
+        min-width: 380px;
+        max-width: 380px;
+    }
+    .LastCell{
+        min-width: 280px;
+        max-width: 480px;
+    }
+    
+}
+@media (max-width: 560px){
+    body div p{
+        height: 70px;
+        margin-bottom: 2%;
+    }
+    .UT{ /*UpperText*/
+        position: absolute;
+        top: 25%;
+        left: 2%;
+        width: 100%;
+        text-align:left;
+    }
+    .CT{ /*CenterText*/
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        top: 50%;
+        left: 2%;
+    }
+    .BT{ /*BottomText*/
+        position: absolute;
+        top: 25%;
+        right: 2%;
+        width: 100%;
+        text-align: right;  
+    }
+    .r2c3{
+        height: 70px;
+    }
+    .r2c2{
+        height: 70px;
+        background-color: transparent;
+        border-bottom:#9e90ef solid 5px;
+    }
+    .r2c2> span:nth-child(1){
+        color: black;
+    }
+    .r2c2> span:nth-child(3){
+        color: #9e90ef;
+    }
+    .r2c2> span:nth-child(5){
+        color: grey;
+    }
+    .r3c5{
+        background-color: transparent;
+        border-bottom:#fea67f solid 5px;
+    }
+    .r3c5> span:nth-child(1){
+        color: black;
+    }
+    .r3c5> span:nth-child(3){
+        color: #fea67f;
+    }
+    .r3c5> span:nth-child(5){
+        color: grey;
+    }
+
+    .LastColumn{
+        min-width: 300px;
+        max-width: 350px;
+    }
+    .LastCell{
+        min-width: 280px;
+        max-width: 480px;
+        height: 70px;
+    }
+}

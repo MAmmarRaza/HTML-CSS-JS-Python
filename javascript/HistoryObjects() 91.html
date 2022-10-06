@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>locationObject</title>
+    </head>
+<body>
+    <h1>javascript: History Objects</h1>
+   <button id="bk">Back Button</button>
+   <button id="fd">Forward Button</button>
+   <button id="go">Go Button</button>
+
+<script>
+    //History Object Properties
+    //length
+    console.log(history.length); //currently pages open 
+//Methods back() to move back forward() to move forward go(+-values) to move where you want
+    document.getElementById("bk").onclick=bkFunction;
+    function bkFunction(){
+            history.back();
+    }
+
+    document.getElementById("fd").onclick=fdFunction;
+    function fdFunction(){
+        history.forward()
+    }
+
+    document.getElementById("go").onclick=goFunction;
+    function goFunction(){
+        history.go(-1); //positive or negative values, it will go one page back if -1 if +1 then one page forward
+    }
+//extra concept of local storage
+    localStorage.setItem("name","Ammar"); //go to inspect-->application-->local storage 
+    var x="string";
+    document.write("<br>"+typeof x);
+
+
+</script>
+    
+</body>
+</html>

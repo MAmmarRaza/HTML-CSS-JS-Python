@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CirularLinkedList</title>
+    </head>
+<body>
+    <button onclick="calculate()">Click here</button>
+
+<script type="text/javascript">
+        
+
+class Node{
+    constructor(data, next = null){
+        this.data = data,
+        this.next = next
+    }
+}
+class LinkedList{
+    constructor(){
+        this.head = null;
+    }
+    append(data){
+        let newNode=new Node(data)
+        let tempNode=this.head
+        if(this.head==null){
+            newNode.next=newNode
+            this.head=newNode
+        }
+        else{
+            while(tempNode.next!=this.head){
+                tempNode=tempNode.next
+            }
+            tempNode.next=newNode
+            newNode.next=this.head
+            alert(tempNode.data)
+        }
+    }
+    print(){
+        alert("print")
+        let tempNode=this.head
+        
+        do{
+            if(tempNode.next==this.head){
+                document.write(tempNode.data,"-->NULL")
+            }
+            else
+            document.write(tempNode.data,"-->")
+
+            tempNode=tempNode.next  
+        }while(tempNode!=this.head)
+    }
+}
+
+function calculate(){
+    let l= new LinkedList();
+    l.append(10)
+    l.append(11)
+    l.append(12)
+    l.print()      
+}
+
+</script>
+    
+</body>
+</html>

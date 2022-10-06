@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="DanceSchoolSctions.css">
+<style>
+    
+body{
+     padding: 0;
+     margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;  
+    background-color: #1d1d1d;
+}
+.upper{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  background-color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0px 10% 0px 15%;
+  
+  
+}
+
+.midContent{
+    margin: auto;
+    width: 100%;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    
+}
+.nos{
+    position: relative;
+}
+.nos-tudiants {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 0.85;
+    letter-spacing: -7.2px;
+    color: #1d1d1d;
+    text-transform:uppercase;
+    white-space: pre;
+    position: absolute;
+    top: -20%;
+    left: -73%; 
+    
+  }
+ 
+  .Aenean-eget-congue {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+    white-space: pre; 
+    position: absolute;
+    top: 50%;
+    left: -14%;
+    
+  }
+  .section-video{
+      display: flex;
+      flex-wrap: wrap; 
+      background-color: #fff;
+      position: relative;
+      height: auto;  
+  }
+  
+  .section-video> div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+    height: 310px;
+    
+  }
+  .section-video> div:nth-child(1){
+    min-width: 450px;
+    max-width: 480px;
+    flex: 1 1 0px;
+    height: 310px;
+    
+  }
+  .intImage{
+    height:270px;
+    max-width: 100%;
+  }
+
+ /*Section 2  */
+  
+ .students> div>img {
+    height: 339px;
+    margin: 0 30px 0 0;
+    border-radius: 180px;
+    background-color: #d8d8d8;
+
+  }
+  .-Pellentesque-ut-co {
+    height: 132px;
+    margin: 80px 80px 16px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+  .-Pellentesque-ut-co >span:nth-child(1){
+      min-width:150px;
+      max-width:250px;
+  }
+  .Claire {
+    height: 30px;
+    margin: 100px 65px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    color: #1d1d1d;
+  }
+  .Jazz-Rock-student {
+    height: 17px;
+    margin: 30px 0 0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+  }
+  .students{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+  }
+  .students> div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+    height: 350px;
+  }
+  .capGirl{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+/* Servises */
+.Nos-valeurs {
+    height: 190px;
+    margin-top: 7%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: -4.65px;
+    color: #1d1d1d;
+    margin-left: 8%;
+    
+  }
+  .Perfectionnement {
+    height: 42px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.7;
+    letter-spacing: -1.2px;
+    color: #d8d8d8;
+  }
+  .Aenean-eget-congue-e {
+    height: 66px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+
+.servises3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+}
+.servises3>div{
+  min-width: 205px;
+  max-width: 305px;
+  margin-top: 5%;
+}
+.plasir{
+  position: relative;
+  color: #1d1d1d;
+}
+.StickersValeurPlaisir {
+  object-fit: contain;
+  transform: rotate(20deg);
+  position: absolute;
+  top:-100%;
+  left: 70%;
+}
+/* SEction handman */
+.handMan{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 150px;
+    
+  }
+  .handMan>div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+  }
+  .handManImage{
+    min-width: 100px;
+    max-width: 800px;
+  }
+  .Bruce{
+    position: relative;
+    height: 400px;
+  }
+  
+  .handManImage>img:nth-child(2){
+    position: absolute;
+    top: -22%;
+    left: -1%;
+    height: 591px;
+    border-radius: 50%;
+  }
+  .-Pellentesque-ut-c {
+    height: 136px;
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #1d1d1d;
+    white-space: pre;
+  }
+  .Bruce-Ykanji {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch:extra-condensed;
+    font-style: normal;
+    line-height: 0;
+    letter-spacing: 0px;
+    color: #1d1d1d;
+    margin-left: 140px;
+    padding-left: 5%;
+  }
+  .Danseur{
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    color: #545454;
+    white-space: pre;
+    position: absolute;
+    left: 18%;
+  }
+
+  /* Section REjoignex */
+  .Rejoignez-notre-comm {
+    width: 570px;
+    height: 188px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: -2.2px;
+    color: #1d1d1d;
+  }
+  .slider{
+      display: flex;
+      flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 5%;
+    }
+  .slider>div{
+      flex: 1 1 0px;
+  }
+  .allImage{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2%;
+  }
+  .allImage>span{
+      border: #1d1d1d 2px solid;
+      border-radius: 50%;
+      padding: 20px;
+      width: 80px;
+      height: 20px;
+      position: relative;
+  }
+  .allImage>span>img{
+    position: absolute;
+    left: 34%;
+    top:20%;
+  }
+  .allImage>img:nth-child(1){
+    border:none;
+}
+#Parent{
+    height: 240px;
+    overflow: scroll;
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 1%; */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    margin-top: 4%;
+    
+}
+.sliderImages{
+    white-space: nowrap;
+    
+}
+#Parent::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.image1{
+    transform: rotate(5deg);
+}
+.image2{
+    transform: rotate(-5deg);
+    
+}
+.image3{
+    transform: rotate(5deg);
+}
+.image4{
+    transform: rotate(5deg);
+}
+.image5{
+    transform: rotate(5deg);
+}
+.image6{
+    transform: rotate(5deg);
+}
+.image7{
+    transform: rotate(5deg);
+}
+
+/* section cards */
+.Rectangle {
+    min-width: 282px;
+    height: 500px;
+    margin: 60px 40px 0 0;
+    padding:40px 40px 40px 32px;
+    border-radius: 16px;
+    background-color: #faf9f7;
+    border: #1d1d1d solid 3px;
+    position: relative;
+  }
+.Certe-inquam-perti {
+    width: 312px;
+    height: 116px;
+    margin: 0 0 16px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1d1d1d;
+  }
+.In-quo-enim-ad-minim {
+    width: 312px;
+    height: 154px;
+    margin: 16px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+img.PICTOShour {
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 4px 0 0;
+    object-fit: contain;
+    background-color: #9d90ee;
+  }
+  .Il-y-a-1-jour {
+    width: 73px;
+    height: 17px;
+    margin: 2px 0 1px 4px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+  }
+  .bottomJour{
+      position: absolute;
+      bottom: 5px;
+
+  }
+  .sliderCards{
+      display: flex;
+      flex-wrap: nowrap;
+  }
+  #Parent2{
+      overflow: scroll;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+  }
+  .cardImage{
+      max-width: 100%;
+      
+  }
+  #Parent2::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.slider2{
+    margin-top: 5%;
+}
+  /* Section footer */
+  
+  img.Group-3 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 352px;
+    height: 172px;
+    margin: 98px 0px 0px 0px;
+    object-fit: contain;
+    border-right: #545454 solid 3px;
+    padding-right: 40px;
+  }
+  .Juste-Debout-School {
+    height: 68px;
+    margin:98px 0 0 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .-rue-de-lEst-7502 {
+    width: 198px;
+    height: 22px;
+    margin: 16px 27px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: rgb(173, 169, 169);
+  }
+  .Juste-Debout-School {
+    height: 68px;
+    margin:98px 0 0 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: #686868;
+  }
+  .Juste-Debout-School-core {
+    height: 68px;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: normal;
+    color: white;
+    
+  }
+  .Square-du-Caporal-Pe {
+    height: 64px;
+    margin-top: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #686868;
+  }
+  .Square-du-Caporal-Pe .text-style-1 {
+    color: #ff90c6;
+  }
+
+  .Mentions-lgales-S {
+    height: 22px;
+    margin: 52px 0px 20px 50px;
+    /* font-family: Poppins; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+    min-width: 150px;
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    background-color: #1d1d1d;
+    padding: 0px 10% 0px 10%;
+  }
+  .footer> div{
+      
+    flex: 1 1 0px;
+  }
+  .imageArea{
+      min-width: 230px;
+      max-width: 530px;
+  }
+  .schoolCoreArea{
+    margin-top: 100px;
+    min-width: 230px;
+      max-width: 530px;
+  }
+  .comingSoon{
+    min-width: 230px;
+    max-width: 530px;
+    margin-top: 100px;
+    margin-left:-110px ;
+    margin-bottom: 0px;
+  }
+  .lastWords{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10% 0px 10%;
+    margin-top: -35px;
+  }
+  .lastWords>span{
+    flex: 1 1 0px;
+    min-width: 250px;
+    max-width: 550px;
+  }
+  .-Juste-Debout-2021 {
+    margin: 52px 0px 0px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .allLogos{
+    margin-left: 70px;
+    margin-right: -100px;
+    margin-top: 50px;
+  }
+  img.PICTOSInstagram {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  img.PICTOSYoutube {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  
+  img.PICTOSFacebook {
+    width: 20px;
+    height: 20px;
+    margin-right:16px;
+    object-fit: contain;
+  }
+  /* .hrtag{
+      position: relative;
+  }
+  hr{
+      width: 2px;
+      height: 250px;
+      position: absolute;
+      background-color: white;
+      bottom:0px;
+      left: 550px;
+  } */
+  .midContentFooter{
+    margin: auto;
+    width: 100%;
+  }
+  .students>div:nth-child(2){
+    margin-bottom: 100px;
+}
+  @media (max-width:1302px) {
+    
+    /* services */
+    .Nos-valeurs {
+        margin: 100px 0px 0px 0px;
+        font-size: 90px;
+        
+    }
+    .servises3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.5%;
+      }
+      .Servise{
+          margin-top: 3%;
+      }
+      .servises3>div{
+        min-width: 205px;
+        max-width: 305px;
+        margin-top: 5%;
+      }
+      .Perfectionnement {
+          font-size: 30px;
+          font-weight: 100px;
+      }
+    /* handman */
+    .handManImage>img:nth-child(2){
+        position: absolute;
+        top: -100px; 
+      }
+      .Bruce{
+          margin-left: -10%;
+      }
+    /* footer */
+    .footer{
+        gap: 2%;
+        padding: 0px 0% 0px 0%;
+      }
+      .allLogos{
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+        .imageArea{
+            min-width: 230px;
+            max-width: 480px;
+        }
+        .schoolCoreArea{
+          margin-top: 100px;
+          min-width: 130px;
+            max-width: 430px;
+            margin-left: 100px;
+        }
+        .comingSoon{
+            min-width: 130px;
+            max-width: 330px;
+          margin-top: 100px;
+          margin-left:0px ;
+        }
+        .Mentions-lgales-S{
+            margin-top: 0px;
+        }
+        .plasir>img{
+            display: none;
+        }
+       
+      
+  }
+  @media (max-width:700px) {
+      .upper{
+        padding: 0px 10% 0px 8%;
+      }
+    .Nos-valeurs{
+        font-size: 70px;
+        margin-top: 7%;
+        
+    }
+    
+    .Perfectionnement{
+        font-size: 25px;
+        color: #1d1d1d;
+    }
+    .Aenean-eget-congue-e{
+        color: #1d1d1d;
+    }
+    .students>div{
+        margin-top: 100px;
+        position: relative;
+        
+    }
+    
+    .-Pellentesque-ut-co>span:nth-child(1){
+        position: absolute;
+        top: -100px;
+        left: 2%;
+        max-width: 100%;
+        
+    }
+    .handManImage>img:nth-child(2){
+        position: absolute;
+        top: -100px; 
+      }
+    .students>div:nth-child(2){
+        margin-bottom: 100px;
+    }
+    
+    
+  }
+  @media (max-width:600px) {
+      .nos{
+          min-width: 100px;
+          max-width: 100px;
+      }
+    .upper{
+        padding: 0px 10% 0px 5%;
+      }
+      .servises3>div{
+        min-width: 205px;
+        max-width: 305px;
+        margin-top: 5%;
+      }
+    .Perfectionnement{
+        font-size: 35px;
+        font-weight: 1000px;
+        color: #1d1d1d;
+    }
+    .handManImage>img{
+        min-width: 100px;
+        max-width: 360px;
+        
+    }
+    .handManImage>img:nth-child(2){
+        position: absolute;
+        top: -128px; 
+        left: -20px;
+        min-width: 400px;
+        height: auto;
+      }
+      .Bruce{
+          margin-left: -140px;
+      }
+      .intImage{
+          min-width: 200px;
+          max-width: 100%;
+      }
+      .nos-tudiants {
+        font-size: 70px;
+        font-weight: 700;
+        top: -5%;
+        left: -50%; 
+        
+      }
+     .students>div{
+         min-width: 300px;
+         max-width: 400px;
+     }
+     .section-video> div{
+        min-width: 250px;
+        max-width: 350px;
+        flex: 1 1 0px;
+        height: 310px;
+        
+      }
+      .section-video> div:nth-child(1){
+        min-width: 250px;
+        max-width: 480px;
+        flex: 1 1 0px;
+        height: 310px;
+        
+      }
+      .allImage>span{
+        border: #1d1d1d 2px solid;
+        border-radius: 50%;
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    .allImage>span>img{
+      position: absolute;
+      left: 25%;
+      top:20%;
+    }
+  }
+  @media (max-width:466px) {
+    .upper{
+        padding: 0px 10% 0px 2%;
+      }
+      .handManImage{
+          max-width: 100%;
+      }
+    .intImage{
+        min-width: 180px;
+        max-width: 100%;
+    }
+    .nos-tudiants {
+      font-size: 70px;
+      font-weight: 700;
+      top: -5%;
+      left: -220px; 
+      
+    }
+    .students>div{
+        min-width: 300px;
+        max-width: 400px;
+        
+        
+    }
+    .section-video> div{
+       min-width: 250px;
+       max-width: 350px;
+       flex: 1 1 0px;
+       height: 310px;
+       
+     }
+     .section-video> div:nth-child(1){
+       min-width: 250px;
+       max-width: 480px;
+       flex: 1 1 0px;
+       height: 310px;
+       
+     }
+     .handMan>div{
+        min-width: 300px;
+        max-width: 490px;
+      }
+      .-Pellentesque-ut-c {
+          font-size: 30px;
+      }
+
+      .-Pellentesque-ut-co>span:nth-child(1){
+        top: -130px;
+        bottom: 10px;  
+    }
+    .students>div{
+        margin-top: 150px;
+    }
+  }
+  
+</style>
+</head>
+<body>
+    <div class="midContent">
+        <div class="upper">
+            <div class="section-video">
+                <div class="nos">
+                    <span class="nos-tudiants">
+                    nos
+                    étudiants
+                    </span>
+                    <span class="Aenean-eget-congue">
+                    Aenean eget congue est. Ut vitae viverra
+                    urna. Proin ut dolor ut urna tempus laoreet.
+                    Aenean quis lacinia nulla. Vivamus
+                    imperdiet, tellus vel iaculis vestibulum.
+                    </span>
+                </div>
+                <div><img src="img/interview.png"   class="intImage"  alt=""></div>
+            </div>
+
+            <div class="students">
+                <div class="capGirl">
+                    <img src="img/capGirl.png" alt="">
+                    <span class="-Pellentesque-ut-co">
+                        <span>« Pellentesque ut condimentum dui. 
+                        Maecenas rhoncus quis dolor interdum molestie.
+                         Nunc turpis quam, consectetur eu ultricies at, scelerisque in augue. Donec convallis congue diam, at venenatis dui dignissim quis. »</span>
+                        <br>
+                        <span class="Claire">
+                        CLAIRE
+                        </span>
+                        <br>
+                        <span class="Jazz-Rock-student">
+                        Jazz Rock student
+                        </span>
+                    </span>
+                                    
+                </div>
+                <div class="capGirl">
+                    <img src="img/capBoy.png" alt="">
+                    <span class="-Pellentesque-ut-co">
+                        <span>« Pellentesque ut condimentum dui. Maecenas rhoncus quis dolor interdum molestie. Nunc turpis quam, consectetur eu ultricies at, scelerisque in augue. Donec convallis congue diam, at venenatis dui dignissim quis. »</span>                        <br>
+                        <span class="Claire">
+                        JEAN
+                        </span>
+                        <br>
+                        <span class="Jazz-Rock-student">
+                        Hip-hop student
+                        </span>
+                    </span>
+                    
+                </div>
+            </div>
+
+
+            <span class="Nos-valeurs">
+                NOS VALUERS
+              </span>
+            <div class="Servise">
+                <div class="servises3">
+                    <div>
+                        <span class="Perfectionnement">
+                            PERFECTI0NNEMENT
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                    <div>
+                        <span  class="Perfectionnement">
+                            DÉVELOPMENT
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                    <div>
+                        <span class="Perfectionnement plasir">
+                            PLAISIR
+                            <img class="StickersValeurPlaisir"src="img/stickers-valeur-plaisir.png" alt="">
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                
+                    <div>
+                        <span class="Perfectionnement">
+                            LOYATÉ
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                    <div>
+                        <span class="Perfectionnement">
+                            AUTHENTICITÉ
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                    <div>
+                        <span class="Perfectionnement">
+                            ASSIDUITÉ
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                    <div>
+                        <span class="Perfectionnement">
+                            TECHNICITÉ
+                          </span><br>
+                          <span class="Aenean-eget-congue-e">
+                            Aenean eget congue est. Ut vitae viverra urna.  Proin ut dolor ut urna tempus laoreet.
+                          </span>
+                    </div>
+                
+                </div>
+                
+            </div>
+
+            
+            <div class="handMan">
+                <div class="handManImage">
+                    <img src="img/circleBehind.png" alt="">
+                    <img src="img/handMan.png" alt="">
+                </div>
+                <div class="Bruce">
+                <span class="-Pellentesque-ut-c">
+                    « Pellentesque ut 
+                    condimentum dui. 
+                    Maecenas rhoncus quis 
+                    dolor interdum molestie. »
+                </span><br>
+                <span class="Bruce-Ykanji">BRUCE YAKANJI</span> 
+                <span class="Danseur">
+                    Danseur Hip-Hop et
+                    fondateur de Juste Debout
+                </span>  
+                </div>
+            </div>
+            <div class="slider">
+                <div >
+                    <span class="Rejoignez-notre-comm">
+                        REJOIGNEZ NOTRE COMMUNAUTÉ
+                      </span>
+                </div>
+                <div class="allImage">
+                    
+                    <button style="border: none;background-color: transparent;"  id="slideBack" type="button"><img class="arr" src="img/003-pictos-arrow-left_3@2x.png" height="62px" width="52px" alt=""></button>
+                    <button style="border: none;background-color: transparent;"  id="slide" type="button"><img class="arr" src="img/003-pictos-arrow-right_3@2x.png" height="62px" width="52px" alt=""></button>
+                    <span>
+                        <img class="fac" src="img/003-pictos-facebook_2.png" height="32px" width="32px" alt="">
+                    </span>
+                    <span>
+                        <img class="ins" src="img/003-pictos-instagram_2.png" height="32px" width="32px" alt="">
+                    </span>
+                    <span>
+                        <img class="you" src="img/003-pictos-youtube_2.png" height="32px" width="32px" alt="">
+                    </span>
+                </div>
+            </div>
+            <div id="Parent">
+                <div class="sliderImages">
+                    <img class="image1"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image2"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image3"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image4"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image5"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image6"src="img/bill gates.jpg" height="219px" width="260px" alt="">
+                    <img class="image7"src="img/bill gates.jpg" height="219px" width="260px" alt="">              
+                </div>
+            </div>
+            
+
+            <div class="slider slider2">
+                <div >
+                    <span class="Rejoignez-notre-comm">
+                        NOS DERNIÉRIES ACTUALITÉS
+                      </span>
+                </div>
+                <div class="allImage">
+                    <button style="border: none;background-color: transparent;"  id="slideBack2" type="button"><img class="arr" src="img/003-pictos-arrow-left_3@2x.png" height="62px" width="52px" alt=""></button>
+                    <button style="border: none;background-color: transparent;"  id="slide2" type="button"><img class="arr" src="img/003-pictos-arrow-right_3@2x.png" height="62px" width="52px" alt=""></button>
+                </div>
+            </div>
+            <div id="Parent2">
+                <div class="sliderCards">
+                    <div class="Rectangle">
+                        <span class="Certe-inquam-perti">
+                            Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex.
+                          </span><br>
+                          <span class="In-quo-enim-ad-minim">
+                            In quo enim ad minima veniam, quis autem vel eum iure reprehenderit, qui dolorem eum fugiat, quo aut interrogari ut placet, inquam tum dicere exorsus est laborum et aut voluptates omittantur maiorum dolorum fuga et quale sit sentiri haec.
+                          </span><br>
+                          <span class="bottomJour">
+                            <img src="img/003-pictos-hour.svg"
+                            class="PICTOShour">
+                          <span class="Il-y-a-1-jour">
+                            Il y a 1 jour
+                          </span>
+                          </span>
+                          
+                    </div>
+                    <div class="Rectangle">
+                        <img class="cardImage" src="img/apple-1769553.jpg" width="392px" height="248px" alt="">
+                        <span class="Certe-inquam-perti">
+                            Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex.
+                          </span><br>
+                          <span class="In-quo-enim-ad-minim">
+                            In quo enim ad minima veniam, quis autem vel eum iure reprehenderit, qui dolorem eum fugiat, quo aut interrogari ut placet, inquam tum dicere exorsus est laborum et aut voluptates omittantur maiorum dolorum fuga et quale sit sentiri haec.
+                          </span><br>
+                          <span class="bottomJour">
+                            <img src="img/003-pictos-hour.svg"
+                            class="PICTOShour">
+                          <span class="Il-y-a-1-jour">
+                            Il y a 1 jour
+                          </span>
+                          </span>
+                          
+                    </div>        
+                    <div class="Rectangle">
+                        <span class="Certe-inquam-perti">
+                            Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex.
+                          </span><br>
+                          <span class="In-quo-enim-ad-minim">
+                            In quo enim ad minima veniam, quis autem vel eum iure reprehenderit, qui dolorem eum fugiat, quo aut interrogari ut placet, inquam tum dicere exorsus est laborum et aut voluptates omittantur maiorum dolorum fuga et quale sit sentiri haec.
+                          </span><br>
+                          <span class="bottomJour">
+                            <img src="img/003-pictos-hour.svg"
+                            class="PICTOShour">
+                          <span class="Il-y-a-1-jour">
+                            Il y a 1 jour
+                          </span>
+                          </span>
+                          
+                    </div> 
+                    <div class="Rectangle">
+                        <img class="cardImage" src="img/apple-1769553.jpg" width="392px" height="248px" alt="">
+                        <span class="Certe-inquam-perti">
+                            Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex.
+                          </span><br>
+                          <span class="In-quo-enim-ad-minim">
+                            In quo enim ad minima veniam, quis autem vel eum iure reprehenderit, qui dolorem eum fugiat, quo aut interrogari ut placet, inquam tum dicere exorsus est laborum et aut voluptates omittantur maiorum dolorum fuga et quale sit sentiri haec.
+                          </span><br>
+                          <span class="bottomJour">
+                            <img src="img/003-pictos-hour.svg"
+                            class="PICTOShour">
+                          <span class="Il-y-a-1-jour">
+                            Il y a 1 jour
+                          </span>
+                          </span>
+                          
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div class="whiteBack">
+
+    <div class="midContentFooter">
+        <!-- Footer -->
+        <!-- <div class="footer">
+            <div class="imageArea">
+                <img src="img/group-3.png" class="Group-3">
+            </div>
+            <div class="schoolCoreArea">
+                <span class="Juste-Debout-School-core">
+                    Juste Debout <br> School Core
+                </span>
+                <br>
+                <span class="-rue-de-lEst-7502">
+                    3 rue de l’Est, 75020 Paris
+                </span>
+            </div>
+            <div class="comingSoon">
+                <span class="Juste-Debout-School">
+                    Juste Debout <br>School Industry
+                </span>
+                <br>
+                <span class="Square-du-Caporal-Pe">
+                    Square du Caporal Peugeot
+                75017 Paris <br><span class="text-style-1">Coming Soon !</span>
+                </span>
+            </div>
+            <div class="lastWords">
+                <span class="-Juste-Debout-2021">
+                    © Juste Debout 2021
+                </span> 
+                <span class="allLogos">
+                    <img src="img/003-pictos-youtube.png"
+                        srcset="img/003-pictos-youtube@2x.png 2x,
+                        img/003-pictos-youtube@3x.png 3x"
+                        class="PICTOSYoutube">
+                    <img src="img/003-pictos-instagram.png"
+                        srcset="img/003-pictos-instagram@2x.png 2x,
+                        img/003-pictos-instagram@3x.png 3x"
+                        class="PICTOSInstagram">
+                    <img src="img/003-pictos-facebook.png"
+                        srcset="img/003-pictos-facebook@2x.png 2x,
+                        img/003-pictos-facebook@3x.png 3x"
+                        class="PICTOSFacebook">
+                </span>
+                <span class="Mentions-lgales-S">
+                    Mentions légales  |  Site réalisé par Sweet Punk
+                </span>   
+            </div>
+        </div> -->
+    </div>
+</div>
+<script>
+    var button = document.getElementById('slide');
+button.onclick = function () {
+    var container = document.getElementById('Parent');
+    sideScroll(container,'right',25,100,10);
+};
+
+var back = document.getElementById('slideBack');
+back.onclick = function () {
+    var container = document.getElementById('Parent');
+    sideScroll(container,'left',25,100,10);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+
+var button = document.getElementById('slide2');
+button.onclick = function () {
+    var container = document.getElementById('Parent2');
+    sideScroll(container,'right',25,300,10);
+};
+
+var back = document.getElementById('slideBack2');
+back.onclick = function () {
+    var container = document.getElementById('Parent2');
+    sideScroll(container,'left',25,300,10);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+</script> 
+</body>
+</html>

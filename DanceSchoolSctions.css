@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+@font-face {
+  font-family: Heroic;
+  src: url('HeroicCondensed-Black.otf') format("opentype");
+}
+body{
+     padding: 0;
+     margin:0;
+    text-decoration: none;
+    box-sizing: border-box;  
+    background-color: #1d1d1d;
+}
+.upper{
+  background-color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 3% 10% 0px 15%;
+  
+}
+
+.midContent{
+    margin: auto;
+    width: 100%;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+/* .nos{
+    position: relative;
+} */
+.nos-tudiants {
+    font-family: heroic condensed;
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -5.2px;
+    color: #1d1d1d;
+    text-transform:uppercase;
+    
+    /* position: absolute; */
+    /* top: -20%;
+    left: 0%;  */
+    
+  }
+ 
+  .Aenean-eget-congue {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight:500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing:-0.1px;
+    color: #696969;
+        /* white-space: pre;  */
+    /* position: absolute; */
+    /* top: 50%;
+    left: -14%; */
+    
+  }
+  .section-video{
+      display: flex;
+      flex-wrap: wrap; 
+      background-color: #fff;
+      height: auto;  
+  }
+  
+  .section-video> div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+    height: 310px;
+  }
+  .section-video> div:nth-child(1){
+    min-width: 450px;
+    max-width: 480px;
+    height: 310px;
+    }
+  .intImage{
+    height:310px;
+    max-width: 100%;
+  }
+
+ /*Section 2  */
+  
+ .students> div>img {
+    height: 339px;
+    margin: 0 30px 0 0;
+    border-radius: 180px;
+    background-color: #d8d8d8;
+
+  }
+  .-Pellentesque-ut-co {
+    height: 132px;
+    margin: 50px 80px 16px 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+  .-Pellentesque-ut-co >span:nth-child(1){
+      min-width:150px;
+      max-width:250px;
+  }
+  .Claire {
+    height: 30px;
+    margin: 10px 65px 0 0;
+    font-family: heroic condensed;
+    font-size: 34px;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    color: #1d1d1d;
+  }
+  .Jazz-Rock-student {
+    height: 17px;
+    margin:0px 30px 0 0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+  }
+  .students{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+  }
+  .students> div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+    height: 350px;
+  }
+  .capGirl{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+/* Servises */
+.Nos-valeurs {
+    height: 190px;
+    margin-top: -2%;
+    font-family: heroic condensed;
+    font-size: 140px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: -4.65px;
+    color: #1d1d1d;
+    margin-left: 20%;
+    
+  }
+  .Servise{
+    margin-top: -7%;
+  }
+  .Perfectionnement {
+    height: 42px;
+    font-family: heroic condensed;
+    font-size: 34px;
+    font-weight: 700;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.7;
+    color: #cfcdcd;
+  }
+  .Aenean-eget-congue-e {
+    height: 66px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #696969;
+  }
+
+.servises3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+}
+.servises3>div{
+  min-width: 205px;
+  max-width: 305px;
+  margin-top: 5%;
+}
+.plasir{
+  position: relative;
+  color: #1d1d1d;
+}
+.StickersValeurPlaisir {
+  object-fit: contain;
+  transform: rotate(8deg);
+  position: absolute;
+  top:-150%;
+  left: 60%;
+}
+/* SEction handman */
+.handMan{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 150px;
+    
+  }
+  .handMan>div{
+    min-width: 450px;
+    max-width: 600px;
+    flex: 1 1 0px;
+  }
+  .handManImage{
+    min-width: 100px;
+    max-width: 800px;
+  }
+  .Bruce{
+    position: relative;
+    height: 400px;
+  }
+  
+  .handManImage>img:nth-child(2){
+    position: absolute;
+    top: -22%;
+    left: -2%;
+    height: 591px;
+    width: 515px;
+    border-radius: 50%;
+  }
+  .-Pellentesque-ut-c {
+    height: 136px;
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight:401;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #1d1d1d;
+    white-space: pre;
+  }
+  .Bruce-Ykanji {
+    font-family: heroic condensed;    
+    font-size: 34px;
+    font-weight: 800;
+    font-stretch:extra-condensed;
+    font-style: normal;
+    line-height: 0;
+    letter-spacing: 0px;
+    color: #1d1d1d;
+    margin-left: 140px;
+    padding-left: 4%;
+  }
+  .Danseur{
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    color: #545454;
+    white-space: pre;
+    position: absolute;
+    left: 16%;
+    line-height: 18px;
+  }
+
+  /* Section REjoignex */
+  .Rejoignez-notre-comm {
+    width: 570px;
+    height: 188px;
+    font-family: heroic condensed;    
+    font-size: 60px;
+    font-weight: 800;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.85;
+    letter-spacing: -2.2px;
+    color: #1d1d1d;
+  }
+  .slider{
+      display: flex;
+      flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 5%;
+    }
+  .slider>div{
+      flex: 1 1 0px;
+      min-width: 400px;
+  }
+  .allImage{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2%;
+}
+  .allImage>div{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2%;
+  }
+  
+  .allImage>div>span{
+      border: #1d1d1d 2px solid;
+      border-radius: 50%;
+      padding: 20px;
+      min-width: 80px;
+      height: 20px;
+      position: relative;
+  }
+  .allImage>div>span>img{
+    position: absolute;
+    left: 34%;
+    top:20%;
+  }
+  .allImage>img:nth-child(1){
+    border:none;
+}
+#Parent{
+    height: 240px;
+    overflow: scroll;
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 1%; */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    margin-top: 4%;
+    
+}
+.sliderImages{
+    white-space: nowrap;
+    
+}
+#Parent::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.image1{
+    transform: rotate(5deg);
+}
+.image2{
+    transform: rotate(-5deg);
+    
+}
+.image3{
+    transform: rotate(5deg);
+}
+.image4{
+    transform: rotate(5deg);
+}
+.image5{
+    transform: rotate(-5deg);
+}
+.image6{
+    transform: rotate(8deg);
+}
+.image7{
+    transform: rotate(-5deg);
+}
+
+/* section cards */
+.Rectangle {
+    min-width: 282px;
+    height: 500px;
+    margin: 60px 40px 0 0;
+    padding:40px 40px 40px 32px;
+    border-radius: 16px;
+    background-color: #f8f8f7;
+    border: #1d1d1d solid 3px;
+    position: relative;
+  }
+.Certe-inquam-perti {
+    width: 312px;
+    height: 116px;
+    margin: 0 0 16px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1d1d1d;
+  }
+.In-quo-enim-ad-minim {
+    width: 312px;
+    height: 154px;
+    margin: 16px 0 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    color: #696969;
+  }
+img.PICTOShour {
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 -4px 0px ;
+    object-fit: contain;
+    
+  }
+  .Il-y-a-1-jour {
+    width: 73px;
+    height: 17px;
+    margin: 2px 0 1px 4px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #545454;
+  }
+  .bottomJour{
+      position: absolute;
+      bottom: 5px;
+
+  }
+  .sliderCards{
+      display: flex;
+      flex-wrap: nowrap;
+  }
+  #Parent2{
+      overflow: scroll;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+  }
+  .cardImage{
+      max-width: 100%;
+  }
+  #Parent2::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.slider2{
+    margin-top: 5%;
+}
+  .students>div:nth-child(2){
+    margin-bottom: 100px;
+}
+@media (max-width:1302px) {
+  
+  .nos-tudiants{
+    font-size: 120px;
+  }
+    .section-video> div{
+        height: auto;
+      }
+      .section-video> div:nth-child(1){
+        height: 210px;
+        
+      }
+      
+    
+    /* services */
+    .Nos-valeurs {
+        margin: 0px 0px 0px 0px;
+        font-size: 90px;
+        
+    }
+    .servises3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.5%;
+      }
+      .Servise{
+          margin-top: -14%;
+      }
+      .servises3>div{
+        min-width: 205px;
+        max-width: 305px;
+        margin-top: 5%;
+      }
+      .Perfectionnement {
+          font-size: 30px;
+          font-weight: 100px;
+      }
+    /* handman */
+    .handManImage>img:nth-child(2){
+        top: -110px;
+      }
+      .Bruce{
+          margin-left: -6%;
+      }
+      .-Pellentesque-ut-c{
+        font-size: 30px;
+      }
+        .Mentions-lgales-S{
+            margin-top: 0px;
+        }
+        .plasir>img{
+            display: none;
+        }
+        .Rectangle {
+            padding:20px 20px 20px 20px;
+            
+          }
+          /* card */
+         
+       
+      
+  }
+  @media (max-width:700px) {
+    .Claire {
+      margin: 30px 65px 0 0;
+    }
+    
+      .upper{
+        padding: 5% 10% 0px 8%;
+      }
+    .Nos-valeurs{
+        font-size: 70px;
+        margin-top: -7%;
+        
+    }
+    .Servise{
+      margin-top: -23%;
+    }
+    
+    .Perfectionnement{
+        font-size: 25px;
+        color: #1d1d1d;
+    }
+    .Aenean-eget-congue-e{
+        color: #1d1d1d;
+    }
+    .students>div{
+        margin-top: 120px;
+        position: relative;
+        
+    }
+    
+    .-Pellentesque-ut-co>span:nth-child(1){
+        position: absolute;
+        top: -110px;
+        left: 2%;
+        max-width: 100%;
+        
+    }
+    .handManImage>img:nth-child(2){
+        position: absolute;
+        top: -100px; 
+      }
+    .students>div:nth-child(2){
+        margin-bottom: 100px;
+    }
+    
+    .Rectangle {
+        padding:10px 10px 10px 10px;
+        
+      }
+    .servises3>div{
+        margin-bottom: 5%;
+    }
+    .Bruce{
+      margin-left: -150px;
+      white-space: normal;
+    }
+    .Bruce-Ykanji{
+      margin-left: 26%;
+    }
+    .Danseur{
+      margin-left: 2%;
+    }
+    .slider1{
+      margin-top:-12% ;
+    }
+    
+  }
+  @media (max-width:600px) {
+    .intImage{
+      max-height: 250px;
+    }
+    .students>div{
+      margin-top: 130px;
+      position: relative;
+      
+  }
+  
+  .-Pellentesque-ut-co>span:nth-child(1){
+      position: absolute;
+      top: -120px;
+      left: 2%;
+      max-width: 100%;
+      
+  }
+ 
+    .section-video>div:nth-child(2){
+      margin-top: 20px;
+    }
+      .nos{
+          min-width: 100px;
+          max-width: 100px;
+      }
+      .Nos-valeurs{
+          font-size: 60px;
+          letter-spacing: normal;
+          margin-bottom: -28%;
+      }
+    .upper{
+        padding: 5% 10% 0px 5%;
+      }
+      .servises3>div{
+        min-width: 205px;
+        max-width: 305px;
+        margin-bottom: 5%;
+      }
+      .servises3>div:nth-child(1){
+        margin-top: 10%;
+      }
+    .Perfectionnement{
+        font-size: 30px;
+        font-weight: 1000px;
+        color: #1d1d1d;
+    }
+    
+    .handManImage>img{
+        min-width: 100px;
+        max-width: 260px;
+        
+    }
+    .handManImage>img:nth-child(2){
+        position: absolute;
+        top: -108px; 
+        left: -20px;
+        min-width: 300px;
+        height: auto;
+      }
+      .Bruce{
+          margin-left: -140px;
+      }
+      .intImage{
+          min-width: 200px;
+          max-width: 100%;
+      }
+      .nos-tudiants {
+        font-size: 75px;
+        font-weight: 700; 
+        
+      }
+     .students>div{
+         min-width: 300px;
+         max-width: 450px;
+     }
+     
+      .section-video> div:nth-child(1){
+        min-width: 250px;
+        max-width: 480px;
+        flex: 1 1 0px;
+        height: 150px;
+        
+      }
+      .allImage{
+        flex-wrap: nowrap;
+      }
+      .allImage>span{
+        border: #1d1d1d 2px solid;
+        border-radius: 50%;
+        padding: 10px;
+        width: 40px;
+        height: 20px;
+        position: relative;
+        margin-top: 12px;
+    }
+    .allImage>span>img{
+        max-width: 25px;
+        max-height: 25px;
+      position: absolute;
+      left: 29%;
+      top:20%;
+    }
+    .Rectangle {
+        padding:10px 10px 10px 10px;
+        
+      }
+      .slider1{
+        margin-top: -15%;
+    }
+    .-Pellentesque-ut-c {
+      font-size: 32px;
+    }
+    /* .allImage>div>button{
+      width: 30px;
+  }
+  .allImage>div>span{
+    padding: 10px;
+  }
+  .allImage>div{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+  } */
+  .allImage>div>span{
+    padding: 10px;
+  }
+  .allImage{
+    flex-wrap: wrap;
+  }
+  }
+  @media (max-width:466px) {
+    .section-video>div:nth-child(2){
+      margin-top: 0px;
+    }
+    .upper{
+        padding: 5% 10% 0px 3%;
+      }
+      .handManImage{
+          max-width: 100%;
+      }
+    .intImage{
+        min-width: 180px;
+        max-width: 100%;
+        height: auto;
+    }
+    .Aenean-eget-congue{
+        left: -70px;
+    }
+    .students>div{
+        min-width: 300px;
+        max-width: 400px; 
+    }
+    .section-video> div{
+       min-width: 250px;
+       max-width: 550px;
+       
+     }
+     .section-video> div:nth-child(1){
+       min-width: 250px;
+       max-width: 480px;
+       height: 190px;
+     }
+     
+     .Nos-valeurs{
+        font-size: 60px;
+        margin-bottom: -38%;
+     }
+     .handMan>div{
+        min-width: 300px;
+        max-width: 490px;
+      }
+      .-Pellentesque-ut-c {
+        height: 136px;
+        font-family: Poppins;
+        font-size: 27px;
+        font-stretch: normal;
+        font-style: italic;
+        color: #1d1d1d;
+        white-space:pre;
+      }
+      .Bruce{
+        margin-left: -110px;
+        white-space: normal;
+        max-width: 500px;
+      }
+
+      .-Pellentesque-ut-co>span:nth-child(1){
+        top: -140px;   
+    }
+    .Bruce-Ykanji{
+      margin-left: 120px;
+    }
+    .Danseur{
+      margin-left: -10px;
+    }
+    .students>div{
+        margin-top: 160px;
+    }
+    .capGirl>img{
+        min-width: 150px;
+        max-width: 200px;
+    }
+    .Rectangle {
+        min-width: 252px;
+        max-width: 262px;
+        height: 360px;
+        margin: 60px 40px 0 0;
+        padding:10px 10px 10px 10px;
+        
+      }
+      .Certe-inquam-perti{
+        font-size: 18px;
+      }
+      .sliderCards{
+        margin-top: -11%;
+      }
+      .cardImage{
+         
+        height: 140px;
+        max-width: 100%;  
+    }
+    .sliderImages>img{
+        height: 180px;
+        width: 140px;
+    }
+    /* .slider1{
+        margin-top: -35%;
+    } */
+    .slider2{
+        margin-top: 7%;
+    }
+    
+    
+    .Bruce-Ykanji{
+        padding-left: 15px;
+    }
+    .handMan{
+        margin-bottom: -90px;
+    }
+    .slider>div{
+      min-width: 200px;
+    }
+    .slider1{
+      margin-top: -34%;
+    }
+  }
+  @media (max-width: 393px) {
+    .-Pellentesque-ut-c{
+      font-size: 24px;
+    }
+    .Bruce-Ykanji{
+      margin-left: 100px;
+    }
+    .Danseur{
+      margin-left: -30px;
+    }
+    .students>div{
+      margin-top: 170px;    
+  }
+  
+  .-Pellentesque-ut-co>span:nth-child(1){
+      top: -160px;
+      
+  }
+  .section-video>div:nth-child(1){
+    height: 190px;
+  }
+  .students>div:nth-child(1){
+    margin-top: 170px;
+}
+.students>div{
+  margin-top: 120px;
+}
+.capGirl>img{
+    min-width: 120px;
+    max-width: 200px;
+    max-height: 280px;
+}
+  }
+  @media (max-width: 330px) {
+    .allImage>div:nth-child(2){
+      display: none;
+    }
+    .-Pellentesque-ut-c{
+      font-size: 20px;
+    }
+    .Bruce{
+      margin-left: -100px;
+    }
+    .Bruce-Ykanji{
+      margin-left: 90px;
+    }
+    .Nos-valeurs{
+      margin-top: -32%;
+      margin-bottom: -50%;
+    }
+    .handManImage{
+      width: 10px;
+    }
+    .handManImage>img{
+      min-width: 80px;
+      max-width: 220px;
+      
+  }
+  
+  .handManImage>img:nth-child(2){
+      position: absolute;
+      top: -101px; 
+      left: -20px;
+      min-width: 260px;
+      height: auto;
+    }
+    .slider1{
+      margin-top: -64%;
+    }
+    /* .Bruce{
+        margin-left: -140px;
+    } */
+  }

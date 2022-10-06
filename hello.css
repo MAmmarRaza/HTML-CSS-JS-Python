@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(to right, rgb(212, 209, 209),rgb(201, 196, 196),rgb(219, 214, 214),rgb(173, 168, 168),rgb(218, 213, 213),rgb(175, 172, 179),rgb(221, 216, 216));
+}
+#banner{
+    margin:7%;
+    width: 80%;
+    height: 80%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(7, 5, 15, 0.4)),url(img/wolves-1400819.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   box-shadow: 0px 0px 50px rgb(7, 3, 0);
+}
+.header{
+    height: 120px;
+    width: 1420px;
+}
+.howling{
+    color: #f5f2f0;
+    font-size: 30px;
+    font-style:oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 60px;
+    width: 300px;
+    padding: 10px 0px 0px 0px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    margin-left: 70px;
+    float: left;
+}
+.howling::first-letter {
+    font-size: 50px;
+    color: #f37c0c;
+  }
+.hr1{
+    width: 215px;
+    height: 2px;
+    margin-top: 0px;
+    border-color: #f37c0c;
+    border-style: solid;
+    margin-left: 0px;
+    background-color:#f37c0c ;
+}
+
+.anc{
+    color: white;
+    font-style: oblique;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 2px;
+    height: 60px;
+    width: 500px;
+    float: left;
+    margin: 30px 0px 0px 400px;
+}
+.links{
+    margin-left: 15px;
+    border-left: #f37c0c 3px solid;
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.content{
+    border-left: #f37c0c 3px solid;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+.heading1{
+    margin: 100px 0px 0px 50px;
+    color: white;
+    font-size: 50px;
+    font-style:oblique;
+    font-weight: bold;   
+    animation-name: example;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.sp2{
+    animation-name: example;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.buttons{
+    margin: 20px 0px 0px 50px;
+    
+}
+.btn{
+    height: 35px;
+    width: 170px;
+    color: white;
+    font-size: 25px;
+    border: #f37c0c 3px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    animation-name: example2;
+    animation-iteration-count: 1;
+    animation-duration: 2.2s;
+    animation-timing-function: ease-in-out;
+}
+
+    
+/*@keyframes example{
+    0%   {color:rgb(241, 229, 229);font-size: 0px; }
+  100% {color:rgb(233, 225, 225);font-size: 50px; }
+}
+@keyframes example2{
+    0%   {border-color: transparent;color: transparent; }
+  95% {border-color: transparent;color: transparent;}
+  100%{border: #f37c0c 3px solid;}
+}*/

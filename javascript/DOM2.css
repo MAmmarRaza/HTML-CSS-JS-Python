@@ -1,0 +1,21 @@
+#outer{
+    height: 250px;
+    width: 1000px;
+    background-color: rgb(119, 17, 10);
+    padding: 70px;
+}
+#inner{
+    height: 100px;
+    width: 900px;
+    background-color: rgb(209, 120, 108);
+    padding: 50px 20px 50px 20px;
+
+}
+.minner{
+    text-align: center;
+    display: inline;
+    border: 2px solid black;
+    margin: 50px;
+    padding: 30px;
+    background-color: white;
+}

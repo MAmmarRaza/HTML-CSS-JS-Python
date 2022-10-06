@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid black;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, 150px); /*2 rows we want*/
+    /*grid-template-columns: 150px 150px 150px;*/
+    /*grid-template-columns: 150px 150px 1fr; /*it will take all other space*/
+    /*grid-template-columns: min-content 1fr 1fr; /*repeat(3,1fr) also use max0content which will give all content straight line*/
+    /*grid-templalte-columns: minmax(150px,200px) take maximum 200px width not more than*/
+    /* grid-row-gap: 20px;
+    grid-column-gap: 20px; */
+    grid-gap: 20px; /*you can use instead using up two*/
+    grid-auto-rows: 150px; /*if another row came simply give them height of 150 px*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+   /* justify-items: center;*/
+   grid-template-columns: repeat(auto-fit , minmax(150px,1fr)); /*repeat(3,1fr) also use max0content which will give all content straight line*/
+
+
+}
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: yellow;
+    /*grid-column:1/4 ; /* or 1/-1 or 1/span 3*/
+}
+.div3{
+    background-color: blue;
+}
+.div4{
+    background-color: green;
+}
+.div5{
+    background-color: grey;
+    /*grid-row-start: 1;
+    grid-row-end: 2; /*grid-row:1/2; from 1 start 2 end*/
+   /* grid-column-start: 2;
+    grid-column-end: 4;/*grid-column:2/4; from 2 start 4 end*/
+
+}
+.div6{
+    background-color: black;
+}

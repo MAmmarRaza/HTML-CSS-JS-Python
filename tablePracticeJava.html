@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+        <!-- <link rel="stylesheet" href="calculator.css"> -->
+        
+    </head>
+    <!-- <style>
+        tr{
+            border: 2px solid black;
+            width: 200px;
+            padding: 25px;
+        }
+    </style> -->
+<body>
+    <form id="form1" action="">
+        <label for="">Name: </label>
+        <input type="text" name="" id="">
+
+        <label for="">Phone: </label>
+        <input type="number" name="" id="">
+
+        <label for="">Gmail: </label>
+        <input type="email" name="" id="">
+    </form>
+    <button onclick="calculate()">Click here</button>
+    <br><br><br>
+        <table id="row" border="5px">
+        </table>
+<script type="text/javascript">
+
+    
+function calculate(){
+    var label1=document.getElementById("form1").children[1].value
+    var label2=parseInt(document.getElementById("form1").children[3].value)
+    var label3=document.getElementById("form1").children[5].value
+
+        let mountains = [
+            {label1, label2, label3}
+        ];
+    // function generateTableHead(table, data) {
+    //             let thead = table.createTHead();
+    //             let row = thead.insertRow();
+    //             for (let key of data) {
+    //                 let th = document.createElement("th");
+    //                 let text = document.createTextNode(key);
+    //                 th.appendChild(text);
+    //                 row.appendChild(th);
+    //             }
+    //         }
+
+            function generateTable(table, data) {
+                for (let element of data) {
+                    let row = table.insertRow();
+                    for (key in element) {
+                        let cell = row.insertCell();
+                        let text = document.createTextNode(element[key]);
+                        cell.appendChild(text);
+                    }
+                }
+            }
+
+            let table = document.querySelector("table");
+            // let data = Object.keys(mountains[0]);
+            // generateTableHead(table, data);
+            generateTable(table, mountains);
+}
+            
+        
+</script>
+    
+</body>
+</html>

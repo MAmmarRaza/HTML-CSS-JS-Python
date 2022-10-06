@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>ammar</title>
+    </head>
+    <body>
+
+        <div id="addplay">
+			<h1>30 Days of JavaScript Challange Leaderboard</h1>
+			
+        		<input id="fname" type="text" placeholder="First Name" required="required" style="background-color: white; 
+				color: black; border: 2px solid #f2c0c1;"> <br><br>
+				<input id="lname" type="text" placeholder="Last Name" required="required" style="background-color: white; 
+				color: black; border: 2px solid #f2c0c1;"> <br><br>
+        		<input id="country" type="text" placeholder="Country" required="required" style="background-color: white; 
+				color: black; border: 2px solid #f2c0c1;"> <br><br>
+				<input id="score" type="number" placeholder="Player Score" required="required" style="background-color: white; 
+				color: black; border: 2px solid #f2c0c1;"> <br><br>
+
+				<button class="btn" onclick="calc()">Add Player</button><br>
+			
+		</div>
+        <div class="output">
+			<table id="table1" style="border: 2px;">
+
+			</table>
+		</div>
+        
+        <script>
+
+            function calc()
+                    {
+                        let n = document.getElementById("fname").value 
+                        let l = document.getElementById("lname").value 
+                        let c = document.getElementById("country").value 
+                        let s = document.getElementById("score").value
+            
+                        let row = document.getElementById("table1").insertRow();
+            
+                        let cell1= row.insertCell();
+                        let text1 = document.createTextNode(n);
+                        cell1.appendChild(text1);
+            
+                        let cell2= row.insertCell();
+                        let text2 = document.createTextNode(l);
+                        cell2.appendChild(text2);
+                        
+                        let cell3= row.insertCell();
+                        let text3 = document.createTextNode(c);
+                        cell3.appendChild(text3);
+                        
+                        let cell4= row.insertCell();
+                        let text4 = document.createTextNode(s);
+                        cell4.appendChild(text4);
+                        
+                        document.getElementById("table1").innerHTML
+                        //console.table(calc())
+                    }
+                    // function calc(){
+                        
+                    // //    tagetting input having id with name and getting its value
+                    //         let n=document.getElementById("name").value 
+                    // //      targetting input having id with age and getting its value in integer form
+                    //         let a=parseInt(document.getElementById("age").value) 
+            
+                    //         // Creating row of table
+                    //         let row = document.getElementById("table1").insertRow();
+            
+                    //         // Inserting cell in row and then apending data in it
+                    //         let cell1= row.insertCell();
+                    //         let text1 = document.createTextNode(n);
+                    //         cell1.appendChild(text1);
+            
+                    //         // Inserting 2nd cell in row and then apending data in it
+                    //         let cell2= row.insertCell();
+                    //         let text2 = document.createTextNode(a);
+                    //         cell2.appendChild(text2);
+                       
+                        
+                    // }
+                    
+                </script>
+	</body>
+		
+	
+    
+    
+        <!-- <input id="name" type="text" placeholder="name"> <br><br>
+        <input id="age" type="text" placeholder="age"> <br><br>
+        <button onclick="calc()">Click</button>
+
+        <table id="table1" border="2px">
+
+        </table> -->
+        
+    </body>
+   
+</html>

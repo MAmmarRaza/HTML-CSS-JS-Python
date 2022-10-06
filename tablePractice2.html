@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+        <!-- <link rel="stylesheet" href="calculator.css"> -->
+        
+    </head>
+    <!-- <style>
+        tr{
+            border: 2px solid black;
+            width: 200px;
+            padding: 25px;
+        }
+    </style> -->
+<body>
+    <form id="form1" action="">
+        <label for="">Name: </label>
+        <input type="text" name="" id="">
+
+        <label for="">Phone: </label>
+        <input type="number" name="" id="">
+
+        <label for="">Gmail: </label>
+        <input type="email" name="" id="">
+    </form>
+    <button onclick="calculate()">Click here</button>
+    <p id="table"></p>
+    <br><br><br>
+        <table id="table1" border="5px">
+        </table>
+<script type="text/javascript">
+
+    
+function calculate(){
+    
+    var label1=document.getElementById("form1").children[1].value
+    var label3=document.getElementById("form1").children[5].value
+    var array=document.getElementById("table").innerHTML=Array.from(label1)
+    var array1=document.getElementById("table").innerHTML=Array.from(label3)
+    //let fruits=["a","b","c","d"]
+        var prev='';
+        var output=array.map(function (el){
+            el=prev + el;
+            prev=el
+            return el;
+        });
+       let array3=output;
+    // document.write(array.length)
+    // document.write(array[0])
+    // document.write("First Alphabet is: ",array[0])
+
+    // for (let element of array) {
+    //     let row = document.getElementById("table1").insertRow();
+    //         for (key in element) {
+    //             let cell = row.insertCell();
+    //             let text = document.createTextNode(element[key]);
+    //             cell.appendChild(text);
+    //     }
+    // }
+
+    //Making each element of array in one multiple rows
+    // for (let element of array) {
+    //     let row = document.getElementById("table1").insertRow();
+    //         for (key in element) {
+    //             let cell = row.insertCell();
+    //             let text = document.createTextNode(element[key]);
+    //             cell.appendChild(text);
+    //     }
+    // }
+
+    //Making each element of array in one multiple columns
+    // let row = document.getElementById("table1").insertRow();
+    // for (let element of array) {
+    //         for (key in element) {
+    //             let cell = row.insertCell();
+    //             let text = document.createTextNode(element[key]);
+    //             cell.appendChild(text);
+    //     }
+    // }
+
+        //Making Multiple columns and multiple rows
+        var x=1;
+        for (keys in array) {
+            let row = document.getElementById("table1").insertRow();
+                let cell2 = row.insertCell();
+                let text2 = document.createTextNode(keys);
+                cell2.appendChild(text2);
+                let cell = row.insertCell();
+                let text = document.createTextNode(output[keys]);
+                cell.appendChild(text);
+                let cell1 = row.insertCell();
+                let text1 = document.createTextNode(array1[keys]);
+                cell1.appendChild(text1);
+                x++;
+        }
+
+        // let fruits=["a","b","c","d"]
+        // let output=fruits.map((el,index)=>{
+        //     return (fruits[index-1]) ? fruits.slice(0,index+1).join('/'):el;
+        // })
+        // let fruits=["a","b","c","d"]
+        // var prev='';
+        // var output=fruits.map(function (el){
+        //     el=prev + el;
+        //     prev=el
+        //     return el;
+        // });
+        // document.write(output)
+        // var k;
+        // for(k=0;k<fruits.length;k++){
+        //     if(k==0){
+        //         continue;
+        //     }
+        //     let temp=fruits[i]
+        //     fruits[i]=fruits[i-1]+"/"+temp;
+        // }
+       
+        // document.write(fruits)
+        
+
+}
+            
+        
+</script>
+    
+</body>
+</html>

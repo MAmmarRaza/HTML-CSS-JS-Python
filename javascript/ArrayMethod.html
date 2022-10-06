@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+    </head>
+<body>
+
+    <script>
+//1:    reverse() Method
+        var a=["Ammar","Aha", 12, true ];
+        a.reverse();
+        document.write("i==>  ", a, "<br><br>ii==>  ");
+
+//2:   sort()  Method   it sort the content in order 
+        a.sort();
+        document.write(a, "<br><br>iii==>  ");
+
+//3:    pop() Method pop out the last array element
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b=a.pop();
+        document.write(b, "<br>");
+        document.write(a, "<br><br>iv==>  ");
+        
+
+//4:    The shift() method removes the first element from an array and returns that removed element.
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b=a.shift();
+        document.write(a, "<br>");
+        document.write(b, "<br><br>v==>  ");
+
+//5:    push() take input in brackets and it pushed the input content at the end of array
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        a.push("Akram", "Ammar");
+        document.write(a, "<br><br>vi==>  ");
+
+//6:    The unshift() method adds new items to the beginning of an array, and returns the new length. unshift() overwrites the original array. Tip: To add new items at the end of an array, use push() 
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        a.unshift("Circle");
+        document.write(a, "<br><br>vii==>  ");
+
+//7:    concat() it concatinate two or more arrays
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b= [12, true, "Ali"]
+        var c=a.concat(b);
+        document.write(c, "<br><br>viii==>  ");
+
+//8:    join() is to join  array with some input
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b=a.join(" - ");
+        document.write(b, "<br><br>ix==>  ");
+
+//9,10: indexof() is to get index of specified content in array
+        var a=["Ammar","Bahadur", "Sunny","Ammar", "Circle" ];
+        var b=a.indexOf("Ammar");
+        document.write(b , "<br><br>x==>  ");
+
+        var a=["Bahadur","Ammar","Sunny","Ammar", "Circle" ];
+        var b=a.indexOf("Ammar", 2);
+        document.write(b + "<br><br>xi==>  ");
+
+//11,12: The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex
+        var a=["Bahadur","Ammar","Sunny","Ammar", "Circle" ];
+        var b=a.lastIndexOf("Ammar");
+        document.write(b + "<br><br>xii==>  ");
+        
+        var a=["Bahadur","Ammar","Sunny","Ammar", "Circle" ];
+        var b=a.lastIndexOf("Ammar", 2);
+        document.write(b + "<br><br>xiii==>  ");
+//13:   The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) 
+        var a=["Bahadur","Ammar","Sunny","ehsan", "Circle" ];
+        var b=a.slice(1,3);
+        document.write(b + "<br><br>xiv==>  ");
+
+//14:   The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+        const months = ['Jan', 'March', 'April', 'June'];
+        months.splice(1, 0, 'Feb');
+        // inserts at index 1
+        console.log(months);
+        // expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+        months.splice(4, 2, 'May');
+        // replaces 1 element at index 4
+        console.log(months);
+        // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+
+//f15:  The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+        var a=[10, 8 , 12 , 14, 15, 16];
+        var b=a.filter(adultage);
+        document.write(b + "<br><br>xvi==>  ");
+        function adultage(a){
+                return a>=10;
+        }
+
+//f16:  The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true
+        var a=[10, 8 , 12 , 14];
+        var b=a.some(adultage);
+        document.write(b + "<br><br>xvii==>  ");
+        function adultage(a){
+                return a>=14;
+        }
+
+//17:   The toString() method is used for converting and representing an array into string form. It returns the string containing the specified array elements. 
+        var a=["Bahadur","Ammar","Sunny","Ehhsan","Circle"];
+        var b=a.toString();
+        document.write(b + "<br><br>xviii==>  ");
+
+//18:   The fill() method changes all elements in an array to a static value, from a start index (default 0 ) to an end index (default array. length ). It returns the modified array.
+        var a=["Bahadur","Ammar","Sunny","Ehhsan","Circle"];
+        var b=a.fill("Akram");
+        document.write(b + "<br><br>xix==>  ");
+
+//19:   The fill() method changes all elements in an array to a static value, from a start index (default 0 ) to an end index (default array. length ). It returns the modified array.
+        var a=["Bahadur","Ammar","Sunny","Ehhsan","Circle"];
+        var b=a.fill("Akram");
+        document.write(b + "<br><br>xx==>  ");
+
+//f20:  The find() method returns the value of the array element that passes a test (provided by a function). The method executes the function once for each element 
+        var a=[10, 8 , 12 , 14, 18, 19, 20];
+        var b=a.find(adultage1);
+        document.write(b + "<br><br>xxi==>  ");
+        function adultage1(a){
+                return a>=14;
+        }
+
+//f21:  The findIndex() method returns the index of the first array element that passes a test (provided by a function). The method executes the function once for each 
+        var a=[10, 8 , 12 , 14, 18, 19, 29];
+        var b=a.findIndex(adultage2);
+        document.write(b + "<br><br>xxii==>  ");
+        function adultage2(a){
+                return a>=14;
+        }
+
+//f22:  The forEach() method executes a provided function once for each array element.
+        var i=["Bahadur","Ammar","Sunny","Ehhsan","Circle"];
+        i.forEach(adultage3);
+        function adultage3(item,index){
+                document.write(index + ": " + item, "<br>");
+        }
+
+        var a=[1,2,3,4,5];
+        a.forEach(adultage6);
+        function adultage6(value){
+                document.write(value*3, "<br>");
+        }
+        document.write("<br>xxiii==>  ");
+
+//23:   The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b=a.includes("Ammar");
+        document.write(b, "<br><br>xxiv==>  ");
+
+//24:   isArray() check either is array or not
+        var a=["Ammar","Bahadur", "Sunny", "Circle" ];
+        var b=Array.isArray(a);
+        document.write(b, "<br><br>xxv==>  ");
+
+//f25:  every() related with some() f16 ,The every() method returns true if all elements in an array pass a test (provided as a function). The method executes the function once for each element present 
+        var a=[12, 12 , 18 , 14];
+        var b=a.every(adultage4);
+        document.write(b + "<br><br>xxvi==>  ");
+        function adultage4(a){
+                return a>=12;
+        }
+//26:   The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+        var a=[12, 12 , 18 , 14];
+        var b=a.entries();
+        for(var i=0;i<=3;i++){
+        document.write(b.next().value,"<br>");
+        }
+        
+    </script>
+</body>
+</html>
